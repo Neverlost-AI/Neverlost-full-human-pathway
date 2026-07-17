@@ -1,0 +1,12 @@
+interface:
+  display_name: Neverlost Review Workflow
+  short_description: Governed, source-grounded Neverlost reviews
+  default_prompt: Use $neverlost-review-workflow to review this artifact through the
+    correct Neverlost lanes and produce a bounded checkpoint.
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

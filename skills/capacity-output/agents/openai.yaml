@@ -1,0 +1,4 @@
+interface:
+  display_name: "Capacity & Output"
+  short_description: "Record output with conditions and recovery cost"
+  default_prompt: "Create a capacity-aware output record without inferring work readiness."

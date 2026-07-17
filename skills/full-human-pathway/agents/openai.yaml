@@ -1,0 +1,4 @@
+interface:
+  display_name: "Full Human Pathway"
+  short_description: "Map a whole-person pathway across systems"
+  default_prompt: "Map this case into a bounded Full Human Pathway bridge plan."

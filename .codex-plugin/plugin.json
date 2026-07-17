@@ -1,0 +1,18 @@
+{
+  "name": "neverlost-build-week",
+  "version": "0.1.0",
+  "description": "Governed, capacity-aware workflows for turning scattered human reality into evidence-aligned action.",
+  "author": {
+    "name": "Jeff Summerhays / Neverlost"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Neverlost: The Full Human Pathway",
+    "shortDescription": "Governed pathways with capacity-aware planning.",
+    "longDescription": "Connect governed review, whole-person pathway mapping, and capacity-aware output records without replacing medical, vocational, funding, or employment authority.",
+    "developerName": "Neverlost",
+    "category": "Productivity",
+    "capabilities": ["Governed Review", "Pathway Mapping", "Capacity Context"],
+    "defaultPrompt": "Map this synthetic vocational case through the Neverlost review, pathway, and capacity workflows."
+  }
+}

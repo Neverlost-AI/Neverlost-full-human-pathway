@@ -1,0 +1,22 @@
+{
+  "case_id": "FHP-SYNTH-001",
+  "required_skills": [
+    "neverlost-review-workflow",
+    "full-human-pathway",
+    "capacity-output"
+  ],
+  "required_final_status": "READY_FOR_USER_REVIEW",
+  "forbidden_final_statuses": [
+    "APPROVED",
+    "ACCEPTANCE_TEST_PASSED",
+    "OPERATIONAL_USE_APPROVED"
+  ],
+  "required_boundaries": [
+    "no_medical_conclusion",
+    "no_work_capacity_conclusion",
+    "no_vr_eligibility_or_funding_approval",
+    "no_employer_commitment",
+    "no_real_personal_records",
+    "no_operational_use"
+  ]
+}
