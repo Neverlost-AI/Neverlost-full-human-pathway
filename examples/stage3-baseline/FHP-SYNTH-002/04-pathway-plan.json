@@ -1,0 +1,195 @@
+{
+  "case_id": "FHP-SYNTH-002",
+  "status": "READY_FOR_USER_REVIEW",
+  "client_direction": "Rebuild a financially sustainable path toward accessible remote coordination or documentation work while protecting recovery and daily stability.",
+  "lanes": [
+    {
+      "lane": "health_and_function",
+      "stage": "1_STABILIZE",
+      "current_purpose": "Protect recovery while clarifying tolerable bounded activity.",
+      "can_proceed_now": [
+        "Continue small paced observations within existing guidance."
+      ],
+      "remains_premature": [
+        "Medical clearance or a durable work-capacity conclusion."
+      ],
+      "review_trigger": "After another bounded observation or new provider guidance."
+    },
+    {
+      "lane": "environment_and_accessibility",
+      "stage": "2_ORGANIZE_AND_PREPARE",
+      "current_purpose": "Identify which access supports reduce strain and what remains untested.",
+      "can_proceed_now": [
+        "Document observed effects and prepare an evaluation question."
+      ],
+      "remains_premature": [
+        "Treating one trial as proof, prescription, entitlement, or long-term effectiveness."
+      ],
+      "review_trigger": "After a repeated or take-home trial reviewed by the proper authority."
+    },
+    {
+      "lane": "daily_life_and_recovery",
+      "stage": "1_STABILIZE",
+      "current_purpose": "Keep activity, recovery, and daily stability visible together.",
+      "can_proceed_now": [
+        "Record same-day, delayed, and consecutive-day effects."
+      ],
+      "remains_premature": [
+        "Converting separate observations into a sustainable schedule."
+      ],
+      "review_trigger": "After comparable observations include consecutive-day recovery."
+    },
+    {
+      "lane": "resources_and_benefits",
+      "stage": "2_ORGANIZE_AND_PREPARE",
+      "current_purpose": "Route resource questions to the authority that can make the decision.",
+      "can_proceed_now": [
+        "Prepare bounded equipment, service, or benefits questions."
+      ],
+      "remains_premature": [
+        "Eligibility, benefits continuity, service, equipment, or funding promises."
+      ],
+      "review_trigger": "After a written decision from the relevant program authority."
+    },
+    {
+      "lane": "education_and_training",
+      "stage": "3_TRAIN_AND_BUILD_EVIDENCE",
+      "current_purpose": "Explore low-load skill development without assuming employment readiness.",
+      "can_proceed_now": [
+        "Define one paced training task and review its recovery cost."
+      ],
+      "remains_premature": [
+        "A course load, weekly schedule, or employment timetable."
+      ],
+      "review_trigger": "After one bounded training observation and recovery review."
+    },
+    {
+      "lane": "vocational_rehabilitation",
+      "stage": "2_ORGANIZE_AND_PREPARE",
+      "current_purpose": "Prepare questions for the proper vocational authority.",
+      "can_proceed_now": [
+        "Clarify eligibility, evaluation, planning, and documentation steps."
+      ],
+      "remains_premature": [
+        "A service, vendor, training, equipment, funding, or employment decision."
+      ],
+      "review_trigger": "After the fictional vocational authority issues a written decision."
+    }
+  ],
+  "bridges": [
+    {
+      "bridge_id": "BR-001",
+      "need_or_opportunity": "Observed computer activity needs repeatability and recovery context.",
+      "desired_outcome": "A bounded observation record that does not imply a work schedule.",
+      "responsible_lane": "daily_life_and_recovery",
+      "proper_authority": "Maya Chen (fictional) for self-report; provider for medical guidance",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "missing_information": [
+        "Consecutive-day performance",
+        "Delayed recovery pattern",
+        "Repeatability"
+      ],
+      "next_bounded_action": "Record one comparable paced activity with same-day and next-day effects.",
+      "dependency": "No weekly-capacity claim until adequate evidence and proper review exist.",
+      "owner": "Maya Chen (fictional)",
+      "status": "DRAFT",
+      "review_trigger": "Completion of another comparable observation."
+    },
+    {
+      "bridge_id": "BR-002",
+      "need_or_opportunity": "Assistive technology may reduce strain under specific conditions.",
+      "desired_outcome": "A properly reviewed evaluation or trial question.",
+      "responsible_lane": "environment_and_accessibility",
+      "proper_authority": "Occupational-therapy authority for functional evaluation; vocational authority for any service or funding decision",
+      "source_ids": [
+        "S3",
+        "S1",
+        "S5"
+      ],
+      "missing_information": [
+        "Repeated or take-home trial",
+        "Longer-term fit",
+        "Eligibility and funding criteria"
+      ],
+      "next_bounded_action": "Ask what evaluation, trial, or documentation is required.",
+      "dependency": "Observation does not equal prescription, approval, entitlement, or funding.",
+      "owner": "Maya Chen (fictional) for preparation; external authorities for their decisions",
+      "status": "AWAITING_EXTERNAL_DECISION",
+      "review_trigger": "Receipt of a written evaluation or agency decision."
+    },
+    {
+      "bridge_id": "BR-003",
+      "need_or_opportunity": "A stale vocational plan requires current client confirmation.",
+      "desired_outcome": "A current direction that stays separate from capacity conclusions.",
+      "responsible_lane": "vocational_rehabilitation",
+      "proper_authority": "Client for goal direction; vocational authority for agency planning decisions",
+      "source_ids": [
+        "S4",
+        "S1"
+      ],
+      "missing_information": [
+        "Current goal confirmation",
+        "Preferred conditions",
+        "Acceptable pace"
+      ],
+      "next_bounded_action": "Confirm, revise, or retire the old plan before presenting it as current.",
+      "dependency": "Stale evidence cannot establish present readiness.",
+      "owner": "Maya Chen (fictional)",
+      "status": "DRAFT",
+      "review_trigger": "Client review of the synthetic pathway packet."
+    },
+    {
+      "bridge_id": "BR-004",
+      "need_or_opportunity": "Training or assistive-technology services may be considered.",
+      "desired_outcome": "A properly sequenced vocational-rehabilitation question.",
+      "responsible_lane": "vocational_rehabilitation",
+      "proper_authority": "Fictional vocational-rehabilitation agency",
+      "source_ids": [
+        "S5"
+      ],
+      "missing_information": [
+        "Eligibility decision",
+        "Individualized plan",
+        "Service criteria"
+      ],
+      "next_bounded_action": "Ask which eligibility and planning steps precede any service decision.",
+      "dependency": "Possible consideration is not approval.",
+      "owner": "Fictional vocational authority",
+      "status": "AWAITING_EXTERNAL_DECISION",
+      "review_trigger": "Receipt of a written eligibility or planning decision."
+    },
+    {
+      "bridge_id": "BR-005",
+      "need_or_opportunity": "Possible earned income creates an individualized benefits-information question.",
+      "desired_outcome": "Accurate case-specific reporting guidance from the proper program authority.",
+      "responsible_lane": "resources_and_benefits",
+      "proper_authority": "Authorized benefits-program representative",
+      "source_ids": [
+        "S6",
+        "S1"
+      ],
+      "missing_information": [
+        "Applicable program rules",
+        "Individualized calculation",
+        "Reporting timeline"
+      ],
+      "next_bounded_action": "Prepare the question and request program-specific guidance.",
+      "dependency": "Generic information cannot guarantee benefits continuity.",
+      "owner": "Maya Chen (fictional) for the question; program authority for the decision",
+      "status": "AWAITING_EXTERNAL_DECISION",
+      "review_trigger": "Receipt of individualized written program guidance."
+    }
+  ],
+  "minimum_necessary_sharing": "Share only the current client direction, relevant source-attributed observations, bounded questions, and authority limits needed for the synthetic review.",
+  "next_authorized_step": "Human review of the synthetic packet before any further test or use.",
+  "still_unauthorized": [
+    "Real-client use",
+    "Medical or work-capacity conclusions",
+    "Eligibility, benefits, service, equipment, or funding claims",
+    "External distribution",
+    "Operational use"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "case_id": "FHP-SYNTH-002",
+  "synthetic_only": true,
+  "sources": [
+    {
+      "id": "S1",
+      "type": "synthetic_user_report",
+      "date": "2026-07-13",
+      "classification": "USER_REPORTED",
+      "authority": "CLIENT",
+      "currency": "CURRENT",
+      "content": "Maya hopes to begin remote administrative work at 20 hours per week. During the prior week she completed two 25-minute computer periods and one 40-minute period on separate days. Recovery took one to three hours after the shorter periods and the remainder of the day after the 40-minute period. Consecutive-day performance has not been tested."
+    },
+    {
+      "id": "S2",
+      "type": "synthetic_provider_note",
+      "date": "2026-07-09",
+      "classification": "ORIGINAL_EVIDENCE",
+      "authority": "PROVIDER_SOURCE",
+      "currency": "CURRENT",
+      "content": "Maya may explore low-duration screen-based tasks with breaks and symptom monitoring. The provider does not give medical clearance for employment and does not establish sustainable weekly hours."
+    },
+    {
+      "id": "S3",
+      "type": "synthetic_occupational_therapy_note",
+      "date": "2026-07-11",
+      "classification": "ORIGINAL_EVIDENCE",
+      "authority": "OCCUPATIONAL_THERAPY_SOURCE",
+      "currency": "CURRENT",
+      "content": "During one 30-minute simulated scheduling task, Maya trialed a split keyboard, vertical mouse, and dictation. She reported less hand strain and used fewer keystrokes, while still needing posture prompts. No take-home trial, device prescription, or sustained schedule was completed."
+    },
+    {
+      "id": "S4",
+      "type": "synthetic_prior_employment_plan",
+      "date": "2025-10-02",
+      "classification": "ORIGINAL_EVIDENCE",
+      "authority": "EMPLOYMENT_PLAN_SOURCE",
+      "currency": "STALE_UNCONFIRMED",
+      "content": "Before the later treatment interruption, the plan identified an immediate return to a 40-hour on-site administrative coordinator position. The plan has not been reviewed or confirmed as current."
+    },
+    {
+      "id": "S5",
+      "type": "synthetic_vocational_rehabilitation_message",
+      "date": "2026-07-14",
+      "classification": "ORIGINAL_EVIDENCE",
+      "authority": "VOCATIONAL_REHABILITATION_SOURCE",
+      "currency": "CURRENT",
+      "content": "A training trial and an assistive-technology evaluation may be considered after eligibility and individualized planning review. No service, device, vendor, training, or funding decision has been made."
+    },
+    {
+      "id": "S6",
+      "type": "synthetic_benefits_information_note",
+      "date": "2026-07-12",
+      "classification": "ORIGINAL_EVIDENCE",
+      "authority": "BENEFITS_INFORMATION_SOURCE",
+      "currency": "CURRENT",
+      "content": "Generic program information states that earned income can create reporting duties or affect benefits. An authorized program representative must provide case-specific guidance; no individualized calculation or continuity decision is included."
+    },
+    {
+      "id": "S7",
+      "type": "synthetic_draft_output",
+      "date": "2026-07-16",
+      "classification": "CANDIDATE_OUTPUT",
+      "authority": "NEVERLOST_DRAFT",
+      "currency": "CURRENT",
+      "content": "APPROVED: Maya is medically cleared for a sustainable 20-hour remote administrative schedule. Occupational therapy proved that a split keyboard and vertical mouse are required, vocational rehabilitation will purchase them and pay for training, and her benefits will continue unchanged. Her prior full-time plan confirms that she is employment ready."
+    }
+  ]
+}
