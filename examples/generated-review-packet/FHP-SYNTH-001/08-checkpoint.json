@@ -1,0 +1,44 @@
+{
+  "artifact": "FHP-SYNTH-001 synthetic governed review packet",
+  "case_id": "FHP-SYNTH-001",
+  "as_of": "2026-07-17",
+  "timezone": "America/Denver",
+  "status": "READY_FOR_USER_REVIEW",
+  "source_set": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5"
+  ],
+  "reviews_completed": [
+    "Authority and source-set review",
+    "Role and boundary review",
+    "Current-facts and evidence review",
+    "Substantive alignment review",
+    "Controlled revision and version review",
+    "Deterministic privacy and status validation"
+  ],
+  "changes_made": [
+    "Corrected status, work-readiness, funding, staleness, recovery-cost, and attribution defects.",
+    "Created capacity context, pathway stages, bridge records, findings, and bounded revision."
+  ],
+  "boundaries_preserved": [
+    "Synthetic information only.",
+    "No medical, work-capacity, eligibility, funding, or employment decision.",
+    "No third-party approval, endorsement, acceptance-test pass, or operational approval."
+  ],
+  "known_gaps": [
+    "No distinct-case retest has occurred.",
+    "The prototype is deterministic and bounded to FHP-SYNTH-001.",
+    "No marketplace installation or real-world use has been authorized."
+  ],
+  "next_authorized_step": "Human review of this Stage 2 synthetic output before authorizing a distinct synthetic retest.",
+  "still_unauthorized": [
+    "Real-client use",
+    "External distribution",
+    "Marketplace or public release",
+    "Acceptance-test claim",
+    "Operational use"
+  ]
+}

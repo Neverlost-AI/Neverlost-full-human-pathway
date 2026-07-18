@@ -1,0 +1,18 @@
+{
+  "case_id": "FHP-SYNTH-001",
+  "synthetic_only": true,
+  "generated_files": [
+    "01-intake.json",
+    "02-source-classification.json",
+    "03-capacity-record.json",
+    "04-pathway-plan.json",
+    "05-findings.json",
+    "06-revised-output.md",
+    "07-change-log.md",
+    "08-checkpoint.json",
+    "validation-report.json"
+  ],
+  "validation_status": "PASS",
+  "patch_cycle_count": 1,
+  "final_status": "READY_FOR_USER_REVIEW"
+}

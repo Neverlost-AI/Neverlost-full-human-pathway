@@ -63,6 +63,13 @@ Return:
 
 Default a completed draft to `READY_FOR_USER_REVIEW`, never `APPROVED`. Apply the `neverlost-review-workflow` before any external-facing packet or approval claim.
 
-## Stage 1 boundary
+## Run the Stage 2 prototype
 
-This is a validated metadata and output-contract stub. Full intake templates, automation, real-client deployment, acceptance testing, and operational use remain outside Stage 1.
+For the authorized synthetic demonstration, use the shared repository contracts:
+
+- validate intake with `schemas/intake.schema.json`;
+- validate pathway output with `schemas/pathway-plan.schema.json`;
+- run `python3 scripts/run_demo_validation.py` from the plugin root;
+- inspect `examples/generated-review-packet/FHP-SYNTH-001/validation-report.json` before reporting success.
+
+The Stage 2 runner is authorized only for `FHP-SYNTH-001`. Real-client use, general automation, distinct-case retesting, acceptance testing, external distribution, and operational use remain outside Stage 2.

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "neverlost://schemas/checkpoint.schema.json",
+  "title": "Neverlost Governed Checkpoint",
+  "type": "object",
+  "required": ["artifact", "case_id", "as_of", "timezone", "status", "source_set", "reviews_completed", "changes_made", "boundaries_preserved", "known_gaps", "next_authorized_step", "still_unauthorized"],
+  "properties": {
+    "artifact": {"type": "string"},
+    "case_id": {"type": "string"},
+    "as_of": {"type": "string"},
+    "timezone": {"const": "America/Denver"},
+    "status": {"const": "READY_FOR_USER_REVIEW"},
+    "source_set": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "reviews_completed": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "changes_made": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "boundaries_preserved": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "known_gaps": {"type": "array", "items": {"type": "string"}},
+    "next_authorized_step": {"type": "string"},
+    "still_unauthorized": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+  }
+}

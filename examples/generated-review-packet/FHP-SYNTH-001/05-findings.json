@@ -1,0 +1,119 @@
+{
+  "case_id": "FHP-SYNTH-001",
+  "status": "REVIEW_COMPLETED_REVISION_REQUIRED",
+  "findings": [
+    {
+      "defect_id": "stale_goal_presented_as_current",
+      "classification": "REVISION_REQUIRED",
+      "source_ids": [
+        "S3",
+        "S5"
+      ],
+      "issue": "A 2025 full-time goal was not reconfirmed and cannot be presented as current.",
+      "disposition": "Label the old goal stale and require client confirmation before use.",
+      "corrected": true
+    },
+    {
+      "defect_id": "short_output_session_treated_as_sustainable_capacity",
+      "classification": "REVISION_RECOMMENDED",
+      "source_ids": [
+        "S2",
+        "S5"
+      ],
+      "issue": "One 70-minute accommodated session was generalized into durable capacity.",
+      "disposition": "Describe the session as observed once with repeatability unknown.",
+      "corrected": true
+    },
+    {
+      "defect_id": "provider_note_overstated_into_work_readiness",
+      "classification": "REVISION_REQUIRED",
+      "source_ids": [
+        "S1",
+        "S5"
+      ],
+      "issue": "Permission to explore low-load training does not establish work readiness.",
+      "disposition": "Remove the unsupported readiness conclusion and preserve the provider note's limit.",
+      "corrected": true
+    },
+    {
+      "defect_id": "counselor_discussion_overstated_into_funding_approval",
+      "classification": "REVISION_REQUIRED",
+      "source_ids": [
+        "S4",
+        "S5"
+      ],
+      "issue": "A possible future discussion was converted into a funding promise.",
+      "disposition": "Frame equipment as a question awaiting the fictional agency's decision.",
+      "corrected": true
+    },
+    {
+      "defect_id": "equipment_question_softening",
+      "classification": "REVISION_RECOMMENDED",
+      "source_ids": [
+        "S2",
+        "S4"
+      ],
+      "issue": "Even after removing the funding promise, the equipment need should be presented as a bounded accessibility question rather than an entitlement.",
+      "disposition": "Ask what assessment or documentation the proper authority requires and preserve the pending-decision status.",
+      "corrected": true
+    },
+    {
+      "defect_id": "draft_status_incorrectly_collapsed_into_approved",
+      "classification": "REVISION_REQUIRED",
+      "source_ids": [
+        "S5"
+      ],
+      "issue": "The candidate draft was labeled APPROVED without human or external authority.",
+      "disposition": "Set the revised packet to READY_FOR_USER_REVIEW.",
+      "corrected": true
+    },
+    {
+      "defect_id": "recovery_cost_omitted_from_capacity_interpretation",
+      "classification": "REVISION_REQUIRED",
+      "source_ids": [
+        "S2",
+        "S5"
+      ],
+      "issue": "The draft omitted the increased symptoms and next-day recovery cost.",
+      "disposition": "Restore immediate and delayed recovery cost to the capacity record.",
+      "corrected": true
+    },
+    {
+      "defect_id": "source_types_blended_without_attribution",
+      "classification": "REVISION_REQUIRED",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ],
+      "issue": "The draft blended provider, client, counselor, historical, and derived statements.",
+      "disposition": "Classify every source and cite source IDs in derived records.",
+      "corrected": true
+    },
+    {
+      "defect_id": "accessible_direction_preserved",
+      "classification": "ACCEPTABLE_AS_WRITTEN",
+      "source_ids": [],
+      "issue": "The client-defined direction toward accessible research-support or documentation work is bounded as a goal.",
+      "disposition": "Preserve as client direction, not a capacity or employment conclusion.",
+      "corrected": true
+    },
+    {
+      "defect_id": "low_load_preparation_preserved",
+      "classification": "ACCEPTABLE_AS_WRITTEN",
+      "source_ids": [
+        "S1"
+      ],
+      "issue": "Exploring low-load preparation with pacing stays within the source boundary.",
+      "disposition": "Preserve with recovery monitoring and no readiness claim.",
+      "corrected": true
+    }
+  ],
+  "counts": {
+    "revision_required": 6,
+    "revision_recommended": 2,
+    "acceptable_as_written": 2
+  }
+}

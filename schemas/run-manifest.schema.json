@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "neverlost://schemas/run-manifest.schema.json",
+  "title": "Neverlost Prototype Run Manifest",
+  "type": "object",
+  "required": ["case_id", "synthetic_only", "generated_files", "validation_status", "patch_cycle_count", "final_status"],
+  "properties": {
+    "case_id": {"type": "string"},
+    "synthetic_only": {"const": true},
+    "generated_files": {"type": "array", "minItems": 8, "items": {"type": "string"}},
+    "validation_status": {"enum": ["PASS", "FAIL"]},
+    "patch_cycle_count": {"type": "integer"},
+    "final_status": {"const": "READY_FOR_USER_REVIEW"}
+  }
+}

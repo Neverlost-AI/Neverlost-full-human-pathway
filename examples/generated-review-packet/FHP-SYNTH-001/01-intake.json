@@ -1,0 +1,23 @@
+{
+  "case_id": "FHP-SYNTH-001",
+  "synthetic_only": true,
+  "person": {
+    "display_name": "Rowan Hale (fictional)",
+    "life_direction": "Build a realistic path toward accessible research-support or documentation work while protecting health and daily stability."
+  },
+  "audience": "Fictional vocational rehabilitation counselor",
+  "real_question": "What preparation may proceed now, what remains premature, and which decisions belong to outside authorities?",
+  "requested_action": "Create a review-only pathway and capacity context for a future vocational-planning conversation.",
+  "authorized_source_ids": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5"
+  ],
+  "exclusions": [
+    "No medical, work-capacity, eligibility, funding, or employment conclusion.",
+    "No real personal records or identifying information.",
+    "No external distribution, endorsement, acceptance-test claim, or operational approval."
+  ]
+}

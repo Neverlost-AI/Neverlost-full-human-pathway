@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "neverlost://schemas/findings.schema.json",
+  "title": "Neverlost Governed Findings Ledger",
+  "type": "object",
+  "required": ["case_id", "status", "findings", "counts"],
+  "properties": {
+    "case_id": {"type": "string"},
+    "status": {"const": "REVIEW_COMPLETED_REVISION_REQUIRED"},
+    "findings": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["defect_id", "classification", "source_ids", "issue", "disposition", "corrected"],
+        "properties": {
+          "defect_id": {"type": "string"},
+          "classification": {"enum": ["REVISION_REQUIRED", "REVISION_RECOMMENDED", "ACCEPTABLE_AS_WRITTEN"]},
+          "source_ids": {"type": "array", "items": {"type": "string"}},
+          "issue": {"type": "string"},
+          "disposition": {"type": "string"},
+          "corrected": {"type": "boolean"}
+        }
+      }
+    },
+    "counts": {
+      "type": "object",
+      "required": ["revision_required", "revision_recommended", "acceptable_as_written"],
+      "properties": {
+        "revision_required": {"type": "integer"},
+        "revision_recommended": {"type": "integer"},
+        "acceptable_as_written": {"type": "integer"}
+      }
+    }
+  }
+}

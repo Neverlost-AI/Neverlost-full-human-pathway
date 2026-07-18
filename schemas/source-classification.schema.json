@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "neverlost://schemas/source-classification.schema.json",
+  "title": "Neverlost Source Classification",
+  "type": "object",
+  "required": ["case_id", "synthetic_only", "sources"],
+  "properties": {
+    "case_id": {"type": "string"},
+    "synthetic_only": {"const": true},
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "type", "date", "classification", "authority", "currency", "content"],
+        "properties": {
+          "id": {"type": "string"},
+          "type": {"type": "string"},
+          "date": {"type": "string"},
+          "classification": {"enum": ["ORIGINAL_EVIDENCE", "USER_REPORTED", "USER_GUIDANCE", "CANDIDATE_OUTPUT"]},
+          "authority": {"enum": ["PROVIDER_SOURCE", "CLIENT", "COUNSELOR_SOURCE", "NEVERLOST_DRAFT"]},
+          "currency": {"enum": ["CURRENT", "STALE_UNCONFIRMED"]},
+          "content": {"type": "string"}
+        }
+      }
+    }
+  }
+}

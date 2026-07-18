@@ -1,0 +1,112 @@
+{
+  "case_id": "FHP-SYNTH-001",
+  "status": "PASS",
+  "completion_status": "STAGE_2_SYNTHETIC_PROTOTYPE_READY_FOR_RETEST",
+  "checks": [
+    {
+      "name": "required_output_files",
+      "passed": true,
+      "detail": "missing=[]"
+    },
+    {
+      "name": "schema:01-intake.json",
+      "passed": true,
+      "detail": "errors=[]"
+    },
+    {
+      "name": "schema:02-source-classification.json",
+      "passed": true,
+      "detail": "errors=[]"
+    },
+    {
+      "name": "schema:03-capacity-record.json",
+      "passed": true,
+      "detail": "errors=[]"
+    },
+    {
+      "name": "schema:04-pathway-plan.json",
+      "passed": true,
+      "detail": "errors=[]"
+    },
+    {
+      "name": "schema:05-findings.json",
+      "passed": true,
+      "detail": "errors=[]"
+    },
+    {
+      "name": "schema:08-checkpoint.json",
+      "passed": true,
+      "detail": "errors=[]"
+    },
+    {
+      "name": "source_set_exact",
+      "passed": true,
+      "detail": "ids=['S1', 'S2', 'S3', 'S4', 'S5']"
+    },
+    {
+      "name": "synthetic_only",
+      "passed": true,
+      "detail": "intake and source set are synthetic-only"
+    },
+    {
+      "name": "stale_source_visible",
+      "passed": true,
+      "detail": "S3 must be stale and unconfirmed"
+    },
+    {
+      "name": "recovery_cost_visible",
+      "passed": true,
+      "detail": "Most of the next day was spent recovering."
+    },
+    {
+      "name": "repeatability_bounded",
+      "passed": true,
+      "detail": "NOT_YET_KNOWN"
+    },
+    {
+      "name": "required_pathway_lanes",
+      "passed": true,
+      "detail": "actual=['education_and_training', 'environment_and_accessibility', 'health_and_function', 'resources_and_capacity', 'vocational_rehabilitation']"
+    },
+    {
+      "name": "bridge_authority_visible",
+      "passed": true,
+      "detail": "bridges=3"
+    },
+    {
+      "name": "all_deliberate_defects_addressed",
+      "passed": true,
+      "detail": "missing=[]"
+    },
+    {
+      "name": "supporting_findings_present",
+      "passed": true,
+      "detail": "missing=[]"
+    },
+    {
+      "name": "finding_counts_match",
+      "passed": true,
+      "detail": "reported={'revision_required': 6, 'revision_recommended': 2, 'acceptable_as_written': 2} calculated={'revision_required': 6, 'revision_recommended': 2, 'acceptable_as_written': 2}"
+    },
+    {
+      "name": "prohibited_claims_absent",
+      "passed": true,
+      "detail": "hits=[]"
+    },
+    {
+      "name": "real_identifiers_absent",
+      "passed": true,
+      "detail": "hits=[]"
+    },
+    {
+      "name": "final_status_bounded",
+      "passed": true,
+      "detail": "checkpoint and pathway remain review-only"
+    },
+    {
+      "name": "schema:09-run-manifest.json",
+      "passed": true,
+      "detail": "errors=[]"
+    }
+  ]
+}

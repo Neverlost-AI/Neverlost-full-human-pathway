@@ -53,6 +53,8 @@ Return:
 
 Apply the `neverlost-review-workflow` when the record will support an external document, vocational packet, accessibility request, disability discussion, or public portfolio claim.
 
-## Stage 1 boundary
+## Run the Stage 2 prototype
 
-This is a validated metadata and output-contract stub. Automated tracking, scoring, trend analysis, work-capacity prediction, and operational use remain outside Stage 1.
+For the authorized synthetic demonstration, validate the record with `schemas/capacity-record.schema.json` and run `python3 scripts/run_demo_validation.py` from the plugin root. Treat any failed recovery-cost, repeatability, source, privacy, or prohibited-claim check as gate-blocking.
+
+The Stage 2 runner is authorized only for `FHP-SYNTH-001`. Automated tracking, scoring, trend analysis, work-capacity prediction, distinct-case retesting, real-client use, and operational use remain outside Stage 2.

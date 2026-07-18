@@ -1,0 +1,140 @@
+{
+  "case_id": "FHP-SYNTH-001",
+  "status": "READY_FOR_USER_REVIEW",
+  "client_direction": "Build a realistic path toward accessible research-support or documentation work while protecting health and daily stability.",
+  "lanes": [
+    {
+      "lane": "health_and_function",
+      "stage": "1_STABILIZE",
+      "current_purpose": "Protect recovery while clarifying what low-load preparation is workable.",
+      "can_proceed_now": [
+        "Use pacing and accessibility supports for bounded preparation."
+      ],
+      "remains_premature": [
+        "A durable or full-time work-capacity conclusion."
+      ],
+      "review_trigger": "After another bounded observation or new provider guidance."
+    },
+    {
+      "lane": "environment_and_accessibility",
+      "stage": "2_ORGANIZE_AND_PREPARE",
+      "current_purpose": "Identify which workspace supports reduce strain and what remains uncertain.",
+      "can_proceed_now": [
+        "Document the effect of the adaptive keyboard and reclined setup."
+      ],
+      "remains_premature": [
+        "Claiming that equipment removes the underlying limitation."
+      ],
+      "review_trigger": "After repeated use under comparable conditions."
+    },
+    {
+      "lane": "resources_and_capacity",
+      "stage": "2_ORGANIZE_AND_PREPARE",
+      "current_purpose": "Frame equipment and support needs for proper review.",
+      "can_proceed_now": [
+        "Prepare a bounded equipment question and supporting observation."
+      ],
+      "remains_premature": [
+        "Treating a discussion as approval or entitlement."
+      ],
+      "review_trigger": "When the fictional counselor completes eligibility and planning review."
+    },
+    {
+      "lane": "education_and_training",
+      "stage": "3_TRAIN_AND_BUILD_EVIDENCE",
+      "current_purpose": "Explore low-load skill development without assuming employment readiness.",
+      "can_proceed_now": [
+        "Define a small training trial with pacing and a recovery review."
+      ],
+      "remains_premature": [
+        "A full course load or employment timetable."
+      ],
+      "review_trigger": "After one small training trial and recovery observation."
+    },
+    {
+      "lane": "vocational_rehabilitation",
+      "stage": "2_ORGANIZE_AND_PREPARE",
+      "current_purpose": "Prepare questions for the proper vocational authority.",
+      "can_proceed_now": [
+        "Discuss training and equipment supports after eligibility review."
+      ],
+      "remains_premature": [
+        "Funding, service, eligibility, or employment claims."
+      ],
+      "review_trigger": "After the fictional counselor issues an actual decision."
+    }
+  ],
+  "bridges": [
+    {
+      "bridge_id": "BR-001",
+      "need_or_opportunity": "Accessible equipment may reduce strain during bounded document work.",
+      "desired_outcome": "A properly reviewed accessibility-support question.",
+      "responsible_lane": "environment_and_accessibility",
+      "proper_authority": "Fictional vocational counselor or agency after eligibility and planning review",
+      "source_ids": [
+        "S2",
+        "S4"
+      ],
+      "missing_information": [
+        "Eligibility decision",
+        "Equipment assessment",
+        "Funding criteria"
+      ],
+      "next_bounded_action": "Prepare the observation and ask what assessment or documentation is required.",
+      "dependency": "No funding claim until the proper authority decides.",
+      "owner": "Rowan for preparation; fictional counselor for agency decision",
+      "status": "AWAITING_EXTERNAL_DECISION",
+      "review_trigger": "Receipt of a fictional written agency decision."
+    },
+    {
+      "bridge_id": "BR-002",
+      "need_or_opportunity": "Low-load training may build evidence without requiring immediate employment.",
+      "desired_outcome": "One paced training trial with output and recovery recorded.",
+      "responsible_lane": "education_and_training",
+      "proper_authority": "Rowan, with provider and vocational guidance where applicable",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "missing_information": [
+        "Tolerable duration",
+        "Delayed recovery pattern",
+        "Repeatability"
+      ],
+      "next_bounded_action": "Define one small training task and a next-day recovery check.",
+      "dependency": "The trial must remain within the current pacing boundary.",
+      "owner": "Rowan",
+      "status": "DRAFT",
+      "review_trigger": "Completion of the first paced training observation."
+    },
+    {
+      "bridge_id": "BR-003",
+      "need_or_opportunity": "A stale full-time goal must be replaced with a current client-confirmed direction.",
+      "desired_outcome": "A current vocational direction that does not overstate capacity.",
+      "responsible_lane": "vocational_rehabilitation",
+      "proper_authority": "Rowan defines the goal; the fictional counselor determines agency planning decisions",
+      "source_ids": [
+        "S3"
+      ],
+      "missing_information": [
+        "Current goal confirmation",
+        "Preferred conditions",
+        "Acceptable pace"
+      ],
+      "next_bounded_action": "Confirm or revise the old goal before using it in a vocational packet.",
+      "dependency": "Client confirmation is required before sharing the goal as current.",
+      "owner": "Rowan",
+      "status": "DRAFT",
+      "review_trigger": "Client review of the synthetic pathway packet."
+    }
+  ],
+  "minimum_necessary_sharing": "Share only the current goal, relevant observations, bounded questions, and explicit authority boundaries needed for the fictional vocational discussion.",
+  "next_authorized_step": "Human review of the synthetic packet before any distinct-case retest.",
+  "still_unauthorized": [
+    "Real-client use",
+    "Funding or eligibility claims",
+    "Work-capacity conclusions",
+    "External distribution",
+    "Operational use"
+  ]
+}

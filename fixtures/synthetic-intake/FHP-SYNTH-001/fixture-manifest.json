@@ -1,0 +1,20 @@
+{
+  "case_id": "FHP-SYNTH-001",
+  "synthetic_only": true,
+  "source_files": [
+    "sources/S1-provider-note.json",
+    "sources/S2-user-report.json",
+    "sources/S3-prior-intake.json",
+    "sources/S4-counselor-message.json",
+    "sources/S5-defective-draft.json"
+  ],
+  "expected_deliberate_defects": [
+    "stale_goal_presented_as_current",
+    "short_output_session_treated_as_sustainable_capacity",
+    "provider_note_overstated_into_work_readiness",
+    "counselor_discussion_overstated_into_funding_approval",
+    "draft_status_incorrectly_collapsed_into_approved",
+    "recovery_cost_omitted_from_capacity_interpretation",
+    "source_types_blended_without_attribution"
+  ]
+}

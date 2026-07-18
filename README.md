@@ -2,11 +2,11 @@
 
 A governed, capacity-aware Codex workflow for turning scattered human reality into evidence-aligned action.
 
-## Stage 1 status
+## Current status
 
-`STAGE_1_FOUNDATION_READY_FOR_PROTOTYPE_BUILD`
+`STAGE_2_SYNTHETIC_PROTOTYPE_READY_FOR_RETEST`
 
-The Stage 1 repository contains a validated plugin skeleton, the preserved Neverlost review skill, two validated bounded skill stubs, a synthetic-only vocational case specification, and passing deterministic structure checks.
+The repository now contains the validated Stage 1 foundation and one complete Stage 2 synthetic prototype. `FHP-SYNTH-001` runs from bounded intake through source classification, Capacity & Output, Full Human Pathway, governed review, controlled revision, change log, checkpoint, and deterministic validation.
 
 ## Components
 
@@ -18,6 +18,6 @@ The Stage 1 repository contains a validated plugin skeleton, the preserved Never
 
 The repository is an internal Build Week prototype. It does not diagnose, determine capacity or eligibility, approve services or funding, promise employment, contain real client records, establish external endorsement, or authorize operational use.
 
-## Stage 1 check
+## Validation
 
-Run `python3 scripts/smoke_test.py --write-report tests/STAGE_1_SMOKE_TEST_REPORT.json` and `python3 -m unittest discover -s tests -v`.
+Run `python3 scripts/run_demo_validation.py --patch-cycle-count 1`, `python3 scripts/smoke_test.py`, and `python3 -m unittest discover -s tests -v`.

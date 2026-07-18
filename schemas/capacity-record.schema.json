@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "neverlost://schemas/capacity-record.schema.json",
+  "title": "Neverlost Capacity and Output Record",
+  "type": "object",
+  "required": ["case_id", "observation_id", "source_ids", "observation_window", "output_achieved", "conditions", "accommodations", "constraints", "recovery_cost", "repeatability", "bounded_interpretation", "prohibited_conclusions_withheld"],
+  "properties": {
+    "case_id": {"type": "string"},
+    "observation_id": {"type": "string"},
+    "source_ids": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "observation_window": {
+      "type": "object",
+      "required": ["date", "duration_minutes"],
+      "properties": {
+        "date": {"type": "string"},
+        "duration_minutes": {"type": "integer"}
+      }
+    },
+    "output_achieved": {"type": "string"},
+    "conditions": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "accommodations": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "constraints": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "recovery_cost": {
+      "type": "object",
+      "required": ["immediate", "delayed"],
+      "properties": {
+        "immediate": {"type": "string"},
+        "delayed": {"type": "string"}
+      }
+    },
+    "repeatability": {"enum": ["OBSERVED_ONCE", "VARIABLE", "REPEATABLE_WITHIN_CURRENT_EVIDENCE", "NOT_YET_KNOWN"]},
+    "bounded_interpretation": {"type": "string"},
+    "prohibited_conclusions_withheld": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+  }
+}

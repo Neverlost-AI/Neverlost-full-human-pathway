@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "neverlost://schemas/pathway-plan.schema.json",
+  "title": "Neverlost Full Human Pathway Plan",
+  "type": "object",
+  "required": ["case_id", "status", "client_direction", "lanes", "bridges", "minimum_necessary_sharing", "next_authorized_step", "still_unauthorized"],
+  "properties": {
+    "case_id": {"type": "string"},
+    "status": {"enum": ["DRAFT", "READY_FOR_USER_REVIEW"]},
+    "client_direction": {"type": "string"},
+    "lanes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["lane", "stage", "current_purpose", "can_proceed_now", "remains_premature", "review_trigger"],
+        "properties": {
+          "lane": {"type": "string"},
+          "stage": {"type": "string"},
+          "current_purpose": {"type": "string"},
+          "can_proceed_now": {"type": "array", "items": {"type": "string"}},
+          "remains_premature": {"type": "array", "items": {"type": "string"}},
+          "review_trigger": {"type": "string"}
+        }
+      }
+    },
+    "bridges": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["bridge_id", "need_or_opportunity", "desired_outcome", "responsible_lane", "proper_authority", "source_ids", "missing_information", "next_bounded_action", "dependency", "owner", "status", "review_trigger"],
+        "properties": {
+          "bridge_id": {"type": "string"},
+          "need_or_opportunity": {"type": "string"},
+          "desired_outcome": {"type": "string"},
+          "responsible_lane": {"type": "string"},
+          "proper_authority": {"type": "string"},
+          "source_ids": {"type": "array", "items": {"type": "string"}},
+          "missing_information": {"type": "array", "items": {"type": "string"}},
+          "next_bounded_action": {"type": "string"},
+          "dependency": {"type": "string"},
+          "owner": {"type": "string"},
+          "status": {"enum": ["DRAFT", "AWAITING_EXTERNAL_DECISION", "CLOSED_OR_REPLACED"]},
+          "review_trigger": {"type": "string"}
+        }
+      }
+    },
+    "minimum_necessary_sharing": {"type": "string"},
+    "next_authorized_step": {"type": "string"},
+    "still_unauthorized": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+  }
+}
