@@ -1,0 +1,92 @@
+{
+  "stage": 4,
+  "status": "PASS",
+  "completion_status": "STAGE_4_DEMONSTRATION_PACKAGE_READY_FOR_HUMAN_REVIEW",
+  "checks": [
+    {
+      "name": "manifest_files_present",
+      "passed": true,
+      "detail": "missing=[]"
+    },
+    {
+      "name": "manifest_synthetic_only",
+      "passed": true,
+      "detail": "synthetic_only=True"
+    },
+    {
+      "name": "manifest_status",
+      "passed": true,
+      "detail": "STAGE_4_DEMONSTRATION_PACKAGE_READY_FOR_HUMAN_REVIEW"
+    },
+    {
+      "name": "demo_status",
+      "passed": true,
+      "detail": "STAGE_4_DEMONSTRATION_PACKAGE_READY_FOR_HUMAN_REVIEW"
+    },
+    {
+      "name": "review_only_final_status",
+      "passed": true,
+      "detail": "READY_FOR_USER_REVIEW"
+    },
+    {
+      "name": "manifest_metrics_match_demo",
+      "passed": true,
+      "detail": "mismatches={}"
+    },
+    {
+      "name": "stage3_defect_score",
+      "passed": true,
+      "detail": "{\"detected_and_corrected\": 10, \"possible\": 10}"
+    },
+    {
+      "name": "stage3_classification_score",
+      "passed": true,
+      "detail": "{\"matches\": 10, \"possible\": 10}"
+    },
+    {
+      "name": "stage3_false_positives",
+      "passed": true,
+      "detail": "count=0"
+    },
+    {
+      "name": "stage3_packet_validation",
+      "passed": true,
+      "detail": "checks=24"
+    },
+    {
+      "name": "demo_evidence_checks",
+      "passed": true,
+      "detail": "checks=10"
+    },
+    {
+      "name": "unsafe_draft_labeled",
+      "passed": true,
+      "detail": "synthetic unsafe input is explicitly bounded"
+    },
+    {
+      "name": "human_patch_visible",
+      "passed": true,
+      "detail": "human inspection remains visible"
+    },
+    {
+      "name": "architecture_limit_visible",
+      "passed": true,
+      "detail": "prototype limitation is explicit"
+    },
+    {
+      "name": "vr_boundary_visible",
+      "passed": true,
+      "detail": "VR framing stays non-authoritative"
+    },
+    {
+      "name": "real_identifiers_absent",
+      "passed": true,
+      "detail": "hits=[]"
+    },
+    {
+      "name": "prohibited_package_claims_absent",
+      "passed": true,
+      "detail": "hits=[]"
+    }
+  ]
+}

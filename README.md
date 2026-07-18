@@ -4,15 +4,16 @@ A governed, capacity-aware Codex workflow for turning scattered human reality in
 
 ## Current status
 
-`STAGE_3_DISTINCT_CASE_GENERALIZATION_TEST_PASSED`
+`STAGE_4_DEMONSTRATION_PACKAGE_READY_FOR_HUMAN_REVIEW`
 
-The repository now contains the validated Stage 1 foundation, the completed `FHP-SYNTH-001` prototype, and a governed distinct-case retest using `FHP-SYNTH-002`. The untouched Stage 3 baseline caught and corrected all ten planted defects with zero critical false positives. A separate human inspection found one capacity-source fidelity issue; one reusable patch cycle corrected it without changing the locked baseline.
+The repository now contains the validated foundation, two synthetic cases, a preserved distinct-case baseline, the governed Stage 3 patch record, and a Stage 4 demonstration package. Reviewers can reproduce the full `FHP-SYNTH-002` result with one command and inspect judge-facing, technical, video, and vocational-review evidence without reading the full build history.
 
 ## Components
 
 - `neverlost-review-workflow` — source custody, review lanes, controlled revision, QA, and checkpoints.
 - `full-human-pathway` — whole-person lane mapping, pathway stages, and cross-system bridges.
 - `capacity-output` — useful output documented with conditions, accommodations, variability, and recovery cost.
+- `demo/` — judge results, before/after evidence, ten-defect map, architecture, video storyboard, VR-safe framing, reproducibility guide, and machine-readable validation.
 
 ## Boundaries
 
@@ -20,4 +21,4 @@ The repository is an internal Build Week prototype. It does not diagnose, determ
 
 ## Validation
 
-Run the case with explicit `--case-spec`, `--fixture`, and `--output-dir` arguments. For Stage 3, follow packet validation with `python3 scripts/score_stage3_retest.py`. Repository regressions run with `python3 scripts/smoke_test.py` and `python3 -m unittest discover -s tests -v`.
+Run `python3 scripts/run_stage4_demo.py` for the complete reproducible demonstration. Validate the package with `python3 scripts/validate_stage4_package.py`. Repository regressions run with `python3 scripts/smoke_test.py` and `python3 -m unittest discover -s tests -v`.

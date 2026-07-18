@@ -1,0 +1,81 @@
+{
+  "stage": 4,
+  "case_id": "FHP-SYNTH-002",
+  "status": "PASS",
+  "completion_status": "STAGE_4_DEMONSTRATION_PACKAGE_READY_FOR_HUMAN_REVIEW",
+  "metrics": {
+    "deliberate_defects_detected_and_corrected": 10,
+    "deliberate_defects_possible": 10,
+    "classification_matches": 10,
+    "classification_possible": 10,
+    "critical_false_positives": 0,
+    "packet_checks_passed": 24,
+    "packet_checks_possible": 24,
+    "qualitative_gates_passed": 12,
+    "qualitative_gates_possible": 12,
+    "pathway_lanes": 6,
+    "authority_bridges": 5,
+    "regression_tests_passed": 6,
+    "regression_tests_run": 6,
+    "governed_patch_cycles": 1
+  },
+  "human_review_evidence": {
+    "baseline_packet_commit": "13af4f9",
+    "baseline_score_commit": "d0f6b8e",
+    "manual_finding": "S3-MANUAL-001 capacity observation conflation and counting",
+    "patch_result": "Client observations separated from the distinct occupational-therapy simulation; quantity parsing corrected."
+  },
+  "capacity_evidence": {
+    "primary_source_ids": [
+      "S1"
+    ],
+    "output_achieved": "Reported 3 separate client-observed computer-task periods; the longest recorded period was 40 minutes.",
+    "repeatability": "VARIABLE",
+    "delayed_recovery": "The remainder of the day was required after the longest reported period; consecutive-day performance was not tested."
+  },
+  "evidence_checks": [
+    {
+      "name": "packet_validation",
+      "passed": true
+    },
+    {
+      "name": "defect_score",
+      "passed": true
+    },
+    {
+      "name": "classification_score",
+      "passed": true
+    },
+    {
+      "name": "critical_false_positives",
+      "passed": true
+    },
+    {
+      "name": "capacity_source_separation",
+      "passed": true
+    },
+    {
+      "name": "pathway_structure",
+      "passed": true
+    },
+    {
+      "name": "findings_disposition",
+      "passed": true
+    },
+    {
+      "name": "review_only_status",
+      "passed": true
+    },
+    {
+      "name": "privacy_boundary",
+      "passed": true
+    },
+    {
+      "name": "regression_tests",
+      "passed": true
+    }
+  ],
+  "real_identifier_hits": [],
+  "final_status": "READY_FOR_USER_REVIEW",
+  "boundary": "Synthetic demonstration only; no real-world approval, endorsement, professional conclusion, or operational authorization."
+}

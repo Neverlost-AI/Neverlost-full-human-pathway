@@ -1,0 +1,50 @@
+{
+  "stage": 4,
+  "status": "STAGE_4_DEMONSTRATION_PACKAGE_READY_FOR_HUMAN_REVIEW",
+  "synthetic_only": true,
+  "audiences": [
+    "build_week_or_portfolio_reviewer",
+    "vocational_rehabilitation_work_sample_reviewer",
+    "future_technical_collaborator",
+    "creator_demo_recording"
+  ],
+  "files": [
+    "README.md",
+    "01_JUDGE_RESULTS.md",
+    "02_BEFORE_AFTER.md",
+    "03_TEN_DEFECT_EVIDENCE_MAP.md",
+    "04_TECHNICAL_ARCHITECTURE.md",
+    "05_DEMO_SCRIPT_AND_VIDEO_STORYBOARD.md",
+    "06_VR_SAFE_DEMONSTRATION_NOTE.md",
+    "07_REPRODUCIBILITY_GUIDE.md",
+    "stage4-demo-evidence.json",
+    "stage4-package-manifest.json",
+    "stage4-package-validation.json"
+  ],
+  "authoritative_metrics": {
+    "defects_detected_and_corrected": 10,
+    "defects_possible": 10,
+    "classification_matches": 10,
+    "classification_possible": 10,
+    "critical_false_positives": 0,
+    "packet_checks_passed": 24,
+    "packet_checks_possible": 24,
+    "qualitative_gates_passed": 12,
+    "qualitative_gates_possible": 12,
+    "regression_tests_passed": 6,
+    "regression_tests_run": 6,
+    "governed_patch_cycles": 1
+  },
+  "reproduction_command": "python scripts/run_stage4_demo.py",
+  "final_artifact_status": "READY_FOR_USER_REVIEW",
+  "still_unauthorized": [
+    "real_client_use",
+    "counselor_endorsement",
+    "medical_or_work_capacity_conclusion",
+    "eligibility_benefits_service_equipment_or_funding_decision",
+    "public_or_marketplace_release",
+    "video_publication",
+    "contest_submission",
+    "operational_use"
+  ]
+}
