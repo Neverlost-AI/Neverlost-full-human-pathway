@@ -1,25 +1,28 @@
 # Neverlost Build Week Delta and Codex Collaboration Record
 
-**As-of date:** 2026-07-17  
+**As-of date:** 2026-07-18<br>
 **Operating timezone:** America/Denver  
-**Status:** `BUILD_WEEK_DELTA_AND_MODEL_USE_CONFIRMED_READY_FOR_README_INTEGRATION`
+**Status:** `BUILD_WEEK_DELTA_AND_MODEL_USE_CORRECTED_READY_FOR_SUBMISSION_QA`
 
 ## Purpose
 
-Distinguish the pre-existing Neverlost foundation from the meaningful technical and product work completed during the OpenAI Build Week submission period, and preserve an accurate account of how the creator and Codex collaborated.
+Distinguish the pre-existing Neverlost foundation from the concept, technical, and product work completed during the OpenAI Build Week submission period, and preserve an accurate account of how the creator and Codex collaborated.
 
-This record supports the official requirement for pre-existing projects. It does not claim that every prior concept was complete, public, operational, or contest-ready.
+This record documents both the pre-existing Neverlost foundation and the new work created during the submission period. It does not claim that every prior concept was complete, public, operational, or contest-ready.
 
 ## Prior Neverlost foundation
 
-The following ideas or artifacts existed before the bounded implementation stages and were preserved as source material rather than presented as newly invented software:
+The following ideas or artifacts existed before the Build Week submission period and were preserved as source material rather than presented as newly invented software:
 
 | Prior foundation | Entering state | Build Week treatment |
 | --- | --- | --- |
 | Neverlost governed-review method | Existing reusable review skill and review model | Preserved as the governing process; packaged into the plugin with a validator-compatible metadata adjustment only. |
-| Full Human Pathway | Review-only framework concept and implementation draft | Converted into a bounded, triggerable skill with exclusions, output requirements, schema-backed records, and synthetic tests. |
 | Capacity & Output | Existing workflow concept/diagram | Converted into a bounded skill and machine-readable capacity record that preserves conditions, variability, accommodations, and recovery cost. |
 | Neverlost project identity and visual direction | Existing name, blue/white visual language, and approved NVLT asset | Applied consistently to stage and submission documents; no new third-party brand claim created. |
+
+## Build Week concept work before Stage 1
+
+The creator confirmed on 2026-07-18 that the **Full Human Pathway** concept and initial review-only framework were created after the submission period began on 2026-07-13 and before Stage 1 implementation. During Stages 1–4, that Build Week-created concept was converted into a bounded, triggerable skill with exclusions, output requirements, schema-backed records, synthetic cases, deterministic validation, and a judge demonstration.
 
 The detailed origin record remains in `governance/PRIOR_AND_BUILD_WEEK_WORK_LEDGER.md`.
 
@@ -75,7 +78,7 @@ The detailed origin record remains in `governance/PRIOR_AND_BUILD_WEEK_WORK_LEDG
 
 ## What Codex accelerated
 
-Codex helped turn an established conceptual framework into a reproducible software and evidence package by:
+Codex helped turn established Neverlost methods and the Build Week-created Full Human Pathway concept into a reproducible software and evidence package by:
 
 - inspecting and organizing prior Neverlost source material;
 - scaffolding the plugin, skill structure, schemas, fixtures, runners, validators, and tests;
@@ -110,7 +113,7 @@ The README and video may accurately state that Codex with GPT-5.6 Sol was used t
 
 | Required README topic | Best supporting source |
 | --- | --- |
-| What existed before Build Week | `governance/PRIOR_AND_BUILD_WEEK_WORK_LEDGER.md` |
+| Pre-Build Week foundation and Build Week concept origin | `governance/PRIOR_AND_BUILD_WEEK_WORK_LEDGER.md` |
 | What was added during Build Week | This record and commits `bb0bdb1` through `d6e144f` |
 | How Codex accelerated the work | “What Codex accelerated” above plus the governed stage change logs |
 | Key human decisions | “Creator decisions that controlled the product” above |

@@ -1,6 +1,6 @@
 # Neverlost Build Week Compliance Checklist
 
-**As-of date:** 2026-07-17  
+**As-of date:** 2026-07-18<br>
 **Operating timezone:** America/Denver  
 **Official source checked:** [OpenAI Build Week Official Rules](https://openai.devpost.com/rules)  
 **Planned track:** Work & Productivity  
@@ -36,7 +36,7 @@ This checklist audits submission readiness. It does not determine legal eligibil
 | --- | --- | --- | --- |
 | C-06 | Project is built with Codex and GPT-5.6 and fits a listed track. | Codex collaboration is evidenced by the project thread and dated repository work. Entrant confirmed GPT-5.6 Sol for the project thread. Planned track is Work & Productivity. | `VERIFIED_COMPLETE` |
 | C-07 | Project installs and runs consistently on its stated platform. | A fresh local clone on Linux/Python 3.12.13 reproduced the demo, passed 17 of 17 package checks, passed the smoke test, and passed all six unit tests. Supported and tested platforms are distinguished in the README. | `VERIFIED_COMPLETE` |
-| C-08 | A pre-existing project is meaningfully extended during the submission period, with prior and new work distinguished. | `governance/PRIOR_AND_BUILD_WEEK_WORK_LEDGER.md`, the submission delta record, and commits `bb0bdb1` through `d6e144f` distinguish the foundation from new implementation. | `VERIFIED_COMPLETE` |
+| C-08 | A project is newly created during the submission period or, if pre-existing, meaningfully extended after the period begins; prior and new work must be distinguished when applicable. | The broader Neverlost governed-review foundation, Capacity & Output concept, and identity predated the submission period. The creator confirmed that Full Human Pathway was created during the submission period before Stage 1. `governance/PRIOR_AND_BUILD_WEEK_WORK_LEDGER.md`, the submission delta record, and commits `bb0bdb1` through `d6e144f` distinguish those origins from the Stage 1–4 implementation. | `VERIFIED_COMPLETE` |
 | C-09 | Entrant is authorized to use any third-party SDKs, APIs, or data. | Current Python implementation uses the standard library and repository-owned synthetic data. Final media, font, logo, dependency, and license audit remains required. | `PARTIAL_PACKAGING_REQUIRED` |
 | C-10 | Project is original, owned by the entrant, and does not violate third-party rights. | Jeff Summerhays confirmed ownership of the Neverlost submission and materials. The selected private-repository path does not require a public open-source license; final rights review remains. | `PARTIAL_PACKAGING_REQUIRED` |
 | C-11 | Project did not receive disqualifying financial or preferential support from OpenAI or Devpost. | Entrant confirmed no financial or preferential project support from OpenAI or Devpost. | `VERIFIED_COMPLETE` |

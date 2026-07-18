@@ -92,15 +92,19 @@ Human inspection found a separate measurement-fidelity issue after the baseline 
 - **Data:** synthetic only
 - **Submission boundary:** contest packaging is separate from the frozen Stage 1–4 evidence
 
-### What existed before Build Week
+### What existed before the Build Week submission period
 
 - the Neverlost governed-review method and review model;
-- the Full Human Pathway concept;
 - the Capacity & Output concept; and
 - the Neverlost identity and blue/white visual direction.
 
+### What was created during Build Week before Stage 1
+
+- the Full Human Pathway concept and its initial review-only framework.
+
 ### What was meaningfully added during Build Week
 
+- the Full Human Pathway concept and initial framework;
 - the installable plugin structure and three packaged skills;
 - seven data contracts and two synthetic case systems;
 - generalized workflow, validation, scoring, negative tests, and regressions;
