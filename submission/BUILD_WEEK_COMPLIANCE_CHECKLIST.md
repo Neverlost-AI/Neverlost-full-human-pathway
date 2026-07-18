@@ -35,7 +35,7 @@ This checklist audits submission readiness. It does not determine legal eligibil
 | ID | Official requirement | Neverlost evidence / action | Status |
 | --- | --- | --- | --- |
 | C-06 | Project is built with Codex and GPT-5.6 and fits a listed track. | Codex collaboration is evidenced by the project thread and dated repository work. Entrant confirmed GPT-5.6 Sol for the project thread. Planned track is Work & Productivity. | `VERIFIED_COMPLETE` |
-| C-07 | Project installs and runs consistently on its stated platform. | `python3 scripts/run_stage4_demo.py` reproduces the demonstration; package validation and six unit tests passed at Stage 4. Clean-checkout testing and platform statement remain. | `PARTIAL_PACKAGING_REQUIRED` |
+| C-07 | Project installs and runs consistently on its stated platform. | A fresh local clone on Linux/Python 3.12.13 reproduced the demo, passed 17 of 17 package checks, passed the smoke test, and passed all six unit tests. Supported and tested platforms are distinguished in the README. | `VERIFIED_COMPLETE` |
 | C-08 | A pre-existing project is meaningfully extended during the submission period, with prior and new work distinguished. | `governance/PRIOR_AND_BUILD_WEEK_WORK_LEDGER.md`, the submission delta record, and commits `bb0bdb1` through `d6e144f` distinguish the foundation from new implementation. | `VERIFIED_COMPLETE` |
 | C-09 | Entrant is authorized to use any third-party SDKs, APIs, or data. | Current Python implementation uses the standard library and repository-owned synthetic data. Final media, font, logo, dependency, and license audit remains required. | `PARTIAL_PACKAGING_REQUIRED` |
 | C-10 | Project is original, owned by the entrant, and does not violate third-party rights. | Jeff Summerhays confirmed ownership of the Neverlost submission and materials. The selected private-repository path does not require a public open-source license; final rights review remains. | `PARTIAL_PACKAGING_REQUIRED` |
@@ -50,9 +50,9 @@ This checklist audits submission readiness. It does not determine legal eligibil
 | C-14 | Include a public YouTube demonstration video under three minutes, with audio explaining what was built and how Codex and GPT-5.6 were used. | Storyboard exists at `demo/05_DEMO_SCRIPT_AND_VIDEO_STORYBOARD.md`. Recording, captions, upload, model-usage explanation, and signed-out playback test remain. | `OPEN_ACTION` |
 | C-15 | Video uses no third-party trademarks, copyrighted music, or other material without permission. | Use repository-owned visuals, the approved NVLT mark, original narration, and no unlicensed music. Perform a final rights audit. | `OPEN_ACTION` |
 | C-16 | Provide a judge-accessible repository URL: public with relevant licensing, or private and shared with both required addresses. | Entrant selected a private repository. Repository creation and sharing with `testing@devpost.com` and `build-week-event@openai.com` remain open. | `OPEN_ACTION` |
-| C-17 | README explains Codex collaboration, acceleration, key human decisions, and Codex/GPT-5.6 contributions. | The collaboration record now exists, but the current README does not yet contain the required submission narrative. | `PARTIAL_PACKAGING_REQUIRED` |
+| C-17 | README explains Codex collaboration, acceleration, key human decisions, and Codex/GPT-5.6 contributions. | README now documents Codex acceleration, GPT-5.6 Sol use, the creator's controlling decisions, Build Week additions, accessibility value, and the private Session ID boundary. | `VERIFIED_COMPLETE` |
 | C-18 | Provide the `/feedback` Codex Session ID for the thread where most core functionality was built. | Feedback was submitted and the current thread ID was captured. The value is retained privately for the Devpost field and intentionally excluded from the repository. | `VERIFIED_COMPLETE` |
-| C-19 | Plugins/dev tools include install instructions, supported platforms, and a judge test path that avoids rebuilding from scratch. | One-command demo and synthetic sample data exist. Installation steps, supported/tested platforms, and clean judge path require README expansion and verification. | `PARTIAL_PACKAGING_REQUIRED` |
+| C-19 | Plugins/dev tools include install instructions, supported platforms, and a judge test path that avoids rebuilding from scratch. | README and `docs/PLUGIN_INSTALLATION.md` provide platform-specific commands, optional local-plugin installation, synthetic sample data, and a no-build judge path. The Linux clean-clone test passed. | `VERIFIED_COMPLETE` |
 | C-20 | Provide free, unrestricted working access for testing through the judging period. | Repository/demo access must remain available through August 5, 2026 at 5:00 p.m. Pacific Time; access mode has not yet been selected. | `OPEN_ACTION` |
 | C-21 | Submission materials are in English or include English translations. | Repository, demonstration package, and planned submission materials are in English. | `VERIFIED_COMPLETE` |
 
@@ -66,8 +66,8 @@ This checklist audits submission readiness. It does not determine legal eligibil
 
 ## Current readiness summary
 
-- `VERIFIED_COMPLETE`: 9
-- `PARTIAL_PACKAGING_REQUIRED`: 8
+- `VERIFIED_COMPLETE`: 12
+- `PARTIAL_PACKAGING_REQUIRED`: 5
 - `OPEN_ACTION`: 7
 - `USER_CONFIRMATION_REQUIRED`: 0
 - `NOT_APPLICABLE`: 0

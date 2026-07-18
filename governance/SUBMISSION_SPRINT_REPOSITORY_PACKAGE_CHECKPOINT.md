@@ -13,6 +13,7 @@
 - Added optional local-plugin installation instructions using the current personal-marketplace structure.
 - Selected the private repository path and created an exact GitHub handoff for remote creation and judge access.
 - Validated the plugin, Stage 4 package, smoke test, and all six unit tests.
+- Cloned commit `edc8126` into a fresh local directory and repeated the demo, 17 package checks, smoke test, and six unit tests successfully.
 
 ## Authorized sources and controlling standards
 
@@ -71,4 +72,3 @@ Connect an authenticated GitHub capability or create the private GitHub reposito
 - Counselor feedback or endorsement
 - Real-client or operational use
 - Any medical, work-capacity, eligibility, benefits, equipment, service, funding, or employment conclusion
-
