@@ -18,7 +18,18 @@
           "type": {"type": "string"},
           "date": {"type": "string"},
           "classification": {"enum": ["ORIGINAL_EVIDENCE", "USER_REPORTED", "USER_GUIDANCE", "CANDIDATE_OUTPUT"]},
-          "authority": {"enum": ["PROVIDER_SOURCE", "CLIENT", "COUNSELOR_SOURCE", "NEVERLOST_DRAFT"]},
+          "authority": {
+            "enum": [
+              "PROVIDER_SOURCE",
+              "CLIENT",
+              "COUNSELOR_SOURCE",
+              "OCCUPATIONAL_THERAPY_SOURCE",
+              "EMPLOYMENT_PLAN_SOURCE",
+              "VOCATIONAL_REHABILITATION_SOURCE",
+              "BENEFITS_INFORMATION_SOURCE",
+              "NEVERLOST_DRAFT"
+            ]
+          },
           "currency": {"enum": ["CURRENT", "STALE_UNCONFIRMED"]},
           "content": {"type": "string"}
         }
