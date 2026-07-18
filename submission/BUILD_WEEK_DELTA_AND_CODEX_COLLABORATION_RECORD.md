@@ -2,7 +2,7 @@
 
 **As-of date:** 2026-07-17  
 **Operating timezone:** America/Denver  
-**Status:** `BUILD_WEEK_DELTA_DOCUMENTED_CODEX_RECORD_READY_FOR_README_INTEGRATION`
+**Status:** `BUILD_WEEK_DELTA_AND_MODEL_USE_CONFIRMED_READY_FOR_README_INTEGRATION`
 
 ## Purpose
 
@@ -100,11 +100,11 @@ Jeff Summerhays / Neverlost supplied and controlled the decisions that define th
 - the decision to keep real records, operational use, medical conclusions, funding decisions, and unsupported approval claims outside the prototype; and
 - the decision to keep Modern Paradox Studio as a separate project and potential submission.
 
-## Codex and GPT-5.6 attribution boundary
+## Codex and GPT-5.6 attribution
 
-Codex use is evidenced by this project workflow and the repository's dated implementation record. The submission must include the `/feedback` Session ID for the thread where most core functionality was built.
+Codex use is evidenced by this project workflow and the repository's dated implementation record. The entrant confirmed that the project thread used **GPT-5.6 Sol**. Feedback was submitted from the core project thread, and its Session ID was captured for the private Devpost field rather than published in the repository.
 
-The official rules also require GPT-5.6. The repository does not independently expose the model metadata for this conversation. Before the README or video states that GPT-5.6 was used, confirm that fact from the product/session record and describe its actual contribution. Do not infer or manufacture model attribution.
+The README and video may accurately state that Codex with GPT-5.6 Sol was used to implement, inspect, test, document, and package the project. They must still distinguish Codex acceleration from the creator's product, governance, accessibility, and design decisions.
 
 ## Evidence map for README integration
 
@@ -117,8 +117,8 @@ The official rules also require GPT-5.6. The repository does not independently e
 | Working implementation and metrics | `demo/01_JUDGE_RESULTS.md` and `demo/stage4-demo-evidence.json` |
 | Product architecture and limits | `demo/04_TECHNICAL_ARCHITECTURE.md` |
 | Reproduction and testing | `demo/07_REPRODUCIBILITY_GUIDE.md` |
-| GPT-5.6 contribution | Pending verified session/model attribution |
-| Core Codex Session ID | Pending `/feedback` result |
+| GPT-5.6 contribution | GPT-5.6 Sol confirmed; integrate the bounded collaboration description from this record |
+| Core Codex Session ID | Captured privately after `/feedback`; do not publish in the repository |
 
 ## Boundary preserved
 
@@ -126,4 +126,3 @@ The official rules also require GPT-5.6. The repository does not independently e
 - Synthetic test success does not establish medical, vocational, legal, benefits, funding, employment, or real-client accuracy.
 - Human review remains required.
 - No OpenAI, Devpost, counselor, agency, provider, or employer endorsement is implied.
-
