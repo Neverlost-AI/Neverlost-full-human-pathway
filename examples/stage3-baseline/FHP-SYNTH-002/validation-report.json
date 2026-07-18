@@ -1,0 +1,122 @@
+{
+  "case_id": "FHP-SYNTH-002",
+  "status": "PASS",
+  "completion_status": "STAGE_3_DISTINCT_CASE_PACKET_VALIDATED",
+  "checks": [
+    {
+      "name": "required_output_files",
+      "passed": true,
+      "detail": "missing=[]"
+    },
+    {
+      "name": "schema:01-intake.json",
+      "passed": true,
+      "detail": "errors=[]"
+    },
+    {
+      "name": "schema:02-source-classification.json",
+      "passed": true,
+      "detail": "errors=[]"
+    },
+    {
+      "name": "schema:03-capacity-record.json",
+      "passed": true,
+      "detail": "errors=[]"
+    },
+    {
+      "name": "schema:04-pathway-plan.json",
+      "passed": true,
+      "detail": "errors=[]"
+    },
+    {
+      "name": "schema:05-findings.json",
+      "passed": true,
+      "detail": "errors=[]"
+    },
+    {
+      "name": "schema:08-checkpoint.json",
+      "passed": true,
+      "detail": "errors=[]"
+    },
+    {
+      "name": "source_set_exact",
+      "passed": true,
+      "detail": "ids=['S1', 'S2', 'S3', 'S4', 'S5', 'S6', 'S7']"
+    },
+    {
+      "name": "synthetic_only",
+      "passed": true,
+      "detail": "intake and source set are synthetic-only"
+    },
+    {
+      "name": "stale_source_visible",
+      "passed": true,
+      "detail": "stale_sources=['S4']"
+    },
+    {
+      "name": "source_authority_visible",
+      "passed": true,
+      "detail": "authorities=['BENEFITS_INFORMATION_SOURCE', 'CLIENT', 'EMPLOYMENT_PLAN_SOURCE', 'NEVERLOST_DRAFT', 'OCCUPATIONAL_THERAPY_SOURCE', 'PROVIDER_SOURCE', 'VOCATIONAL_REHABILITATION_SOURCE']"
+    },
+    {
+      "name": "recovery_cost_visible",
+      "passed": true,
+      "detail": "The remainder of the day was required after the longest reported period; consecutive-day performance was not tested."
+    },
+    {
+      "name": "repeatability_bounded",
+      "passed": true,
+      "detail": "VARIABLE"
+    },
+    {
+      "name": "required_pathway_lanes",
+      "passed": true,
+      "detail": "actual=['daily_life_and_recovery', 'education_and_training', 'environment_and_accessibility', 'health_and_function', 'resources_and_benefits', 'vocational_rehabilitation']"
+    },
+    {
+      "name": "bridge_authority_visible",
+      "passed": true,
+      "detail": "bridges=5"
+    },
+    {
+      "name": "all_deliberate_defects_addressed",
+      "passed": true,
+      "detail": "missing=[]"
+    },
+    {
+      "name": "supporting_findings_present",
+      "passed": true,
+      "detail": "acceptable_as_written=2"
+    },
+    {
+      "name": "finding_counts_match",
+      "passed": true,
+      "detail": "reported={'revision_required': 8, 'revision_recommended': 2, 'acceptable_as_written': 2} calculated={'revision_required': 8, 'revision_recommended': 2, 'acceptable_as_written': 2}"
+    },
+    {
+      "name": "prohibited_claims_absent",
+      "passed": true,
+      "detail": "hits=[]"
+    },
+    {
+      "name": "real_identifiers_absent",
+      "passed": true,
+      "detail": "hits=[]"
+    },
+    {
+      "name": "revised_source_attribution",
+      "passed": true,
+      "detail": "missing_citations=[]"
+    },
+    {
+      "name": "final_status_bounded",
+      "passed": true,
+      "detail": "checkpoint and pathway remain review-only"
+    },
+    {
+      "name": "schema:09-run-manifest.json",
+      "passed": true,
+      "detail": "errors=[]"
+    }
+  ]
+}
