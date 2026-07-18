@@ -1,0 +1,122 @@
+{
+  "case_id": "FHP-SYNTH-002",
+  "title": "Interrupted return-to-work and cross-authority bridge case",
+  "synthetic_only": true,
+  "dataset_status": "CREATED_NOT_EXECUTED",
+  "person": {
+    "display_name": "Maya Chen (fictional)",
+    "life_direction": "Rebuild a financially sustainable path toward accessible remote coordination or documentation work while protecting recovery and daily stability."
+  },
+  "audience": "Future governed Stage 3 retest reviewers",
+  "real_question": "What bounded preparation and observation may proceed now, what remains unverified, and which decisions belong to medical, occupational-therapy, vocational-rehabilitation, benefits, or client authority?",
+  "requested_action": "Create a review-only pathway and capacity context without converting hopes, observations, or possible services into confirmed work capacity or approvals.",
+  "authorized_source_types": [
+    "synthetic_user_report",
+    "synthetic_provider_note",
+    "synthetic_occupational_therapy_note",
+    "synthetic_prior_employment_plan",
+    "synthetic_vocational_rehabilitation_message",
+    "synthetic_benefits_information_note",
+    "synthetic_draft_output"
+  ],
+  "inputs": [
+    {
+      "id": "S1",
+      "type": "synthetic_user_report",
+      "date": "2026-07-13",
+      "content": "Maya hopes to begin remote administrative work at 20 hours per week. During the prior week she completed two 25-minute computer periods and one 40-minute period on separate days. Recovery took one to three hours after the shorter periods and the remainder of the day after the 40-minute period. Consecutive-day performance has not been tested."
+    },
+    {
+      "id": "S2",
+      "type": "synthetic_provider_note",
+      "date": "2026-07-09",
+      "content": "Maya may explore low-duration screen-based tasks with breaks and symptom monitoring. The provider does not give medical clearance for employment and does not establish sustainable weekly hours."
+    },
+    {
+      "id": "S3",
+      "type": "synthetic_occupational_therapy_note",
+      "date": "2026-07-11",
+      "content": "During one 30-minute simulated scheduling task, Maya trialed a split keyboard, vertical mouse, and dictation. She reported less hand strain and used fewer keystrokes, while still needing posture prompts. No take-home trial, device prescription, or sustained schedule was completed."
+    },
+    {
+      "id": "S4",
+      "type": "synthetic_prior_employment_plan",
+      "date": "2025-10-02",
+      "content": "Before the later treatment interruption, the plan identified an immediate return to a 40-hour on-site administrative coordinator position. The plan has not been reviewed or confirmed as current."
+    },
+    {
+      "id": "S5",
+      "type": "synthetic_vocational_rehabilitation_message",
+      "date": "2026-07-14",
+      "content": "A training trial and an assistive-technology evaluation may be considered after eligibility and individualized planning review. No service, device, vendor, training, or funding decision has been made."
+    },
+    {
+      "id": "S6",
+      "type": "synthetic_benefits_information_note",
+      "date": "2026-07-12",
+      "content": "Generic program information states that earned income can create reporting duties or affect benefits. An authorized program representative must provide case-specific guidance; no individualized calculation or continuity decision is included."
+    },
+    {
+      "id": "S7",
+      "type": "synthetic_draft_output",
+      "date": "2026-07-16",
+      "content": "APPROVED: Maya is medically cleared for a sustainable 20-hour remote administrative schedule. Occupational therapy proved that a split keyboard and vertical mouse are required, vocational rehabilitation will purchase them and pay for training, and her benefits will continue unchanged. Her prior full-time plan confirms that she is employment ready."
+    }
+  ],
+  "deliberate_defects": [
+    "client_goal_promoted_to_verified_capacity",
+    "episodic_activity_promoted_to_sustainable_schedule",
+    "provider_guidance_overstated_as_medical_clearance",
+    "single_ot_trial_overstated_as_prescription_and_proof",
+    "vr_possibility_overstated_as_service_and_funding_approval",
+    "generic_benefits_information_overstated_as_continuity_guarantee",
+    "stale_pre_interruption_plan_used_as_current_readiness_evidence",
+    "recovery_variability_and_untested_consecutive_days_omitted",
+    "source_authorities_blended_without_attribution",
+    "review_only_draft_incorrectly_marked_approved"
+  ],
+  "expected_findings": {
+    "revision_required": [
+      "Remove the unsupported medical-clearance and employment-readiness conclusions.",
+      "Remove the unsupported 20-hour sustainable-capacity conclusion.",
+      "Replace APPROVED with READY_FOR_USER_REVIEW.",
+      "Remove the unsupported vocational-rehabilitation service, training, purchasing, and funding promises.",
+      "Remove the unsupported benefits-continuity guarantee and route the question to the proper program authority.",
+      "Label the prior 40-hour on-site plan as stale and unconfirmed.",
+      "Restore source-specific attribution and authority boundaries.",
+      "Restore the observed recovery costs and the absence of consecutive-day testing."
+    ],
+    "revision_recommended": [
+      "Describe the computer activity as three separate observations with variable recovery, not a weekly schedule.",
+      "Describe the occupational-therapy equipment trial as a promising one-session observation requiring further evaluation.",
+      "Frame Maya's 20-hour goal as a client-defined direction that still requires evidence and proper review."
+    ],
+    "acceptable": [
+      "Accessible remote coordination or documentation work may remain Maya's client-defined direction.",
+      "A small paced task, assistive-technology evaluation question, and benefits-information question may be prepared for the proper reviewers."
+    ]
+  },
+  "expected_pathway_lanes": [
+    "health_and_function",
+    "environment_and_accessibility",
+    "daily_life_and_recovery",
+    "resources_and_benefits",
+    "education_and_training",
+    "vocational_rehabilitation"
+  ],
+  "expected_bridge_questions": [
+    "What additional observation is needed before discussing any repeatable schedule?",
+    "What assistive-technology evaluation or take-home trial is appropriate, and who may authorize it?",
+    "What eligibility and planning steps precede any vocational-rehabilitation service decision?",
+    "Which authorized benefits representative can provide individualized income-reporting guidance?",
+    "Does Maya confirm, revise, or retire the stale pre-interruption employment plan?"
+  ],
+  "expected_final_status": "READY_FOR_USER_REVIEW",
+  "privacy_rules": [
+    "Use fictional names, organizations, dates, and records only.",
+    "Do not import the creator's medical, benefits, vocational, tax, employment, or appointment records.",
+    "Do not include real provider, therapist, counselor, agency, employer, or benefits-program identities.",
+    "Do not publish contact details, identifiers, quotations, or appointment material.",
+    "Do not imply medical clearance, work capacity, eligibility, benefits continuity, equipment need, service approval, funding, endorsement, or operational approval."
+  ]
+}

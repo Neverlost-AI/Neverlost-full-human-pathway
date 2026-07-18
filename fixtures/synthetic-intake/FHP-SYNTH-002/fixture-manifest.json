@@ -1,0 +1,36 @@
+{
+  "case_id": "FHP-SYNTH-002",
+  "synthetic_only": true,
+  "dataset_status": "CREATED_NOT_EXECUTED",
+  "source_files": [
+    "sources/S1-user-report.json",
+    "sources/S2-provider-note.json",
+    "sources/S3-occupational-therapy-note.json",
+    "sources/S4-prior-employment-plan.json",
+    "sources/S5-vocational-rehabilitation-message.json",
+    "sources/S6-benefits-information-note.json",
+    "sources/S7-defective-draft.json"
+  ],
+  "expected_source_ids": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+  ],
+  "expected_deliberate_defects": [
+    "client_goal_promoted_to_verified_capacity",
+    "episodic_activity_promoted_to_sustainable_schedule",
+    "provider_guidance_overstated_as_medical_clearance",
+    "single_ot_trial_overstated_as_prescription_and_proof",
+    "vr_possibility_overstated_as_service_and_funding_approval",
+    "generic_benefits_information_overstated_as_continuity_guarantee",
+    "stale_pre_interruption_plan_used_as_current_readiness_evidence",
+    "recovery_variability_and_untested_consecutive_days_omitted",
+    "source_authorities_blended_without_attribution",
+    "review_only_draft_incorrectly_marked_approved"
+  ],
+  "execution_boundary": "Fixture creation only. Stage 3 execution requires separate authorization."
+}
