@@ -34,10 +34,14 @@ Do not place the Codex Session ID, account credentials, personal appointment inf
 
 ## Local push commands
 
-Replace `<PRIVATE_REPOSITORY_GIT_URL>` with the Git URL shown by GitHub:
+The selected private repository Git URL is:
+
+```text
+https://github.com/Neverlost-AI/Neverlost-build-week.git
+```
 
 ```bash
-git remote add origin <PRIVATE_REPOSITORY_GIT_URL>
+git remote add origin https://github.com/Neverlost-AI/Neverlost-build-week.git
 git push -u origin main
 ```
 
@@ -49,9 +53,9 @@ git remote -v
 
 Do not overwrite an unexpected remote without review.
 
-## Post-push repository patch
+## Post-push repository check
 
-Replace every `<PRIVATE_REPOSITORY_URL>` placeholder in `README.md` and `docs/PLUGIN_INSTALLATION.md` with the judge-accessible repository URL, commit the change, and push it.
+Confirm that the repository URL in `README.md` and `docs/PLUGIN_INSTALLATION.md` resolves for an authenticated judge account.
 
 ## Remote acceptance test
 
@@ -80,4 +84,3 @@ Pass condition:
 - Final text description
 - Testing instructions
 - Submission receipt
-

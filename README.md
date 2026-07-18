@@ -15,7 +15,7 @@ No API key, internet connection, package installation, or real record is require
 ### macOS or Linux
 
 ```bash
-git clone <PRIVATE_REPOSITORY_URL>
+git clone https://github.com/Neverlost-AI/Neverlost-build-week.git
 cd neverlost-build-week
 python3 scripts/run_stage4_demo.py
 ```
@@ -23,7 +23,7 @@ python3 scripts/run_stage4_demo.py
 ### Windows PowerShell
 
 ```powershell
-git clone <PRIVATE_REPOSITORY_URL>
+git clone https://github.com/Neverlost-AI/Neverlost-build-week.git
 Set-Location neverlost-build-week
 py -3 scripts/run_stage4_demo.py
 ```

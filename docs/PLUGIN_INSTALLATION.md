@@ -18,14 +18,14 @@ Local filesystem plugin installation is not required for the deterministic Pytho
 
 ```bash
 mkdir -p ~/plugins
-git clone <PRIVATE_REPOSITORY_URL> ~/plugins/neverlost-build-week
+git clone https://github.com/Neverlost-AI/Neverlost-build-week.git ~/plugins/neverlost-build-week
 ```
 
 ### Windows PowerShell
 
 ```powershell
 New-Item -ItemType Directory -Force "$HOME\plugins" | Out-Null
-git clone <PRIVATE_REPOSITORY_URL> "$HOME\plugins\neverlost-build-week"
+git clone https://github.com/Neverlost-AI/Neverlost-build-week.git "$HOME\plugins\neverlost-build-week"
 ```
 
 The resulting plugin folder must contain:
