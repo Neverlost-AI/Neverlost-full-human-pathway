@@ -1,0 +1,38 @@
+{
+  "case_id": "FHP-SYNTH-002",
+  "observation_id": "CAP-001",
+  "source_ids": [
+    "S1"
+  ],
+  "observation_window": {
+    "date": "2026-07-13",
+    "duration_minutes": 40
+  },
+  "output_achieved": "Reported 3 separate client-observed computer-task periods; the longest recorded period was 40 minutes.",
+  "conditions": [
+    "Synthetic self-reported observation",
+    "Activities occurred on separate days",
+    "Consecutive-day performance was not tested"
+  ],
+  "accommodations": [
+    "Separate-day pacing between reported periods"
+  ],
+  "constraints": [
+    "The observation does not establish a sustainable work schedule",
+    "Recovery time varied after the reported activity",
+    "Repeatability across consecutive days is unknown"
+  ],
+  "recovery_cost": {
+    "immediate": "Recovery took one to three hours after the shorter reported periods.",
+    "delayed": "The remainder of the day was required after the longest reported period; consecutive-day performance was not tested."
+  },
+  "repeatability": "VARIABLE",
+  "bounded_interpretation": "These observations show bounded activity under stated conditions. They do not establish medical clearance, sustainable weekly capacity, work readiness, or employment readiness.",
+  "prohibited_conclusions_withheld": [
+    "Medical clearance",
+    "Sustainable weekly capacity",
+    "Work readiness",
+    "Employment readiness",
+    "Disability or benefits status"
+  ]
+}

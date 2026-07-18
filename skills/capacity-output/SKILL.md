@@ -53,8 +53,10 @@ Return:
 
 Apply the `neverlost-review-workflow` when the record will support an external document, vocational packet, accessibility request, disability discussion, or public portfolio claim.
 
-## Run the Stage 2 prototype
+## Run the validated synthetic prototype
 
-For the authorized synthetic demonstration, validate the record with `schemas/capacity-record.schema.json` and run `python3 scripts/run_demo_validation.py` from the plugin root. Treat any failed recovery-cost, repeatability, source, privacy, or prohibited-claim check as gate-blocking.
+For an authorized synthetic demonstration, validate the record with `schemas/capacity-record.schema.json` and run `python3 scripts/run_demo_validation.py` with the exact case specification, fixture manifest, and output directory. Treat any failed recovery-cost, repeatability, source, privacy, or prohibited-claim check as gate-blocking.
 
-The Stage 2 runner is authorized only for `FHP-SYNTH-001`. Automated tracking, scoring, trend analysis, work-capacity prediction, distinct-case retesting, real-client use, and operational use remain outside Stage 2.
+Keep the primary capacity observation tied to the source that actually reports the activity. Do not silently merge a separate occupational-therapy simulation, provider statement, or vocational record into the client observation count; carry those sources through their proper lanes and bridges instead.
+
+The validated synthetic fixtures are `FHP-SYNTH-001` and `FHP-SYNTH-002`. Automated tracking, trend analysis, work-capacity prediction, real-client use, external distribution, acceptance-test claims, and operational use remain unauthorized.

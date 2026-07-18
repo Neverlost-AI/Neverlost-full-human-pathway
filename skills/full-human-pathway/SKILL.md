@@ -63,13 +63,14 @@ Return:
 
 Default a completed draft to `READY_FOR_USER_REVIEW`, never `APPROVED`. Apply the `neverlost-review-workflow` before any external-facing packet or approval claim.
 
-## Run the Stage 2 prototype
+## Run the validated synthetic prototype
 
-For the authorized synthetic demonstration, use the shared repository contracts:
+For an authorized synthetic demonstration, use the shared repository contracts:
 
 - validate intake with `schemas/intake.schema.json`;
 - validate pathway output with `schemas/pathway-plan.schema.json`;
-- run `python3 scripts/run_demo_validation.py` from the plugin root;
-- inspect `examples/generated-review-packet/FHP-SYNTH-001/validation-report.json` before reporting success.
+- run `python3 scripts/run_demo_validation.py` with the exact case specification, fixture manifest, and output directory;
+- inspect the generated validation report before reporting packet success;
+- for `FHP-SYNTH-002`, also run `python3 scripts/score_stage3_retest.py` and preserve the locked baseline separately from any patched packet.
 
-The Stage 2 runner is authorized only for `FHP-SYNTH-001`. Real-client use, general automation, distinct-case retesting, acceptance testing, external distribution, and operational use remain outside Stage 2.
+The validated synthetic fixtures are `FHP-SYNTH-001` and `FHP-SYNTH-002`. Stage 3 demonstrates bounded transfer across two fictional cases; it does not authorize real-client use, external distribution, marketplace release, acceptance-test claims, or operational use.

@@ -1,0 +1,147 @@
+{
+  "case_id": "FHP-SYNTH-002",
+  "status": "REVIEW_COMPLETED_REVISION_REQUIRED",
+  "findings": [
+    {
+      "defect_id": "client_goal_promoted_to_verified_capacity",
+      "classification": "REVISION_RECOMMENDED",
+      "source_ids": [
+        "S1",
+        "S7"
+      ],
+      "issue": "A client-defined hours goal was promoted into verified sustainable capacity.",
+      "disposition": "Retain the hours only as a desired direction pending evidence and proper review.",
+      "corrected": true
+    },
+    {
+      "defect_id": "episodic_activity_promoted_to_sustainable_schedule",
+      "classification": "REVISION_REQUIRED",
+      "source_ids": [
+        "S1",
+        "S7"
+      ],
+      "issue": "Separate activity observations with variable recovery were converted into a sustainable weekly schedule.",
+      "disposition": "Keep the observations separate and state that consecutive-day repeatability is untested.",
+      "corrected": true
+    },
+    {
+      "defect_id": "provider_guidance_overstated_as_medical_clearance",
+      "classification": "REVISION_REQUIRED",
+      "source_ids": [
+        "S2",
+        "S7"
+      ],
+      "issue": "Permission to explore bounded tasks was converted into medical clearance.",
+      "disposition": "Remove medical-clearance language and preserve the provider's explicit limit.",
+      "corrected": true
+    },
+    {
+      "defect_id": "single_ot_trial_overstated_as_prescription_and_proof",
+      "classification": "REVISION_RECOMMENDED",
+      "source_ids": [
+        "S3",
+        "S7"
+      ],
+      "issue": "One occupational-therapy trial was promoted into proof and a required-device conclusion.",
+      "disposition": "Describe the observation once and route prescription or longer-term fit to further evaluation.",
+      "corrected": true
+    },
+    {
+      "defect_id": "vr_possibility_overstated_as_service_and_funding_approval",
+      "classification": "REVISION_REQUIRED",
+      "source_ids": [
+        "S5",
+        "S7"
+      ],
+      "issue": "Possible future consideration was converted into service and funding approval.",
+      "disposition": "Restore the eligibility and individualized-planning prerequisites and remove all promises.",
+      "corrected": true
+    },
+    {
+      "defect_id": "generic_benefits_information_overstated_as_continuity_guarantee",
+      "classification": "REVISION_REQUIRED",
+      "source_ids": [
+        "S6",
+        "S7"
+      ],
+      "issue": "Generic benefits information was converted into an individualized continuity guarantee.",
+      "disposition": "Remove the guarantee and route the question to an authorized program representative.",
+      "corrected": true
+    },
+    {
+      "defect_id": "stale_pre_interruption_plan_used_as_current_readiness_evidence",
+      "classification": "REVISION_REQUIRED",
+      "source_ids": [
+        "S4",
+        "S7"
+      ],
+      "issue": "A stale pre-interruption plan was used as current readiness evidence.",
+      "disposition": "Label the plan stale and require current client confirmation before use.",
+      "corrected": true
+    },
+    {
+      "defect_id": "recovery_variability_and_untested_consecutive_days_omitted",
+      "classification": "REVISION_REQUIRED",
+      "source_ids": [
+        "S1",
+        "S7"
+      ],
+      "issue": "The candidate draft omitted variable recovery and the absence of consecutive-day testing.",
+      "disposition": "Restore immediate, delayed, and repeatability limits.",
+      "corrected": true
+    },
+    {
+      "defect_id": "source_authorities_blended_without_attribution",
+      "classification": "REVISION_REQUIRED",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "issue": "The candidate draft blended multiple authorities without source attribution.",
+      "disposition": "Separate and cite client, provider, occupational-therapy, vocational, benefits, historical, and draft statements.",
+      "corrected": true
+    },
+    {
+      "defect_id": "review_only_draft_incorrectly_marked_approved",
+      "classification": "REVISION_REQUIRED",
+      "source_ids": [
+        "S7"
+      ],
+      "issue": "The review-only candidate output was labeled APPROVED without authority.",
+      "disposition": "Replace the label with READY_FOR_USER_REVIEW.",
+      "corrected": true
+    },
+    {
+      "defect_id": "accessible_direction_preserved",
+      "classification": "ACCEPTABLE_AS_WRITTEN",
+      "source_ids": [
+        "S1"
+      ],
+      "issue": "Accessible remote coordination or documentation work remains a bounded client-defined direction.",
+      "disposition": "Preserve it as direction, not verified capacity.",
+      "corrected": true
+    },
+    {
+      "defect_id": "bounded_preparation_preserved",
+      "classification": "ACCEPTABLE_AS_WRITTEN",
+      "source_ids": [
+        "S2",
+        "S3",
+        "S5"
+      ],
+      "issue": "Small paced tasks and properly routed evaluation questions remain supportable.",
+      "disposition": "Preserve them with source attribution and review triggers.",
+      "corrected": true
+    }
+  ],
+  "counts": {
+    "revision_required": 8,
+    "revision_recommended": 2,
+    "acceptable_as_written": 2
+  }
+}

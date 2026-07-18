@@ -4,7 +4,7 @@
 **Baseline packet commit:** `13af4f9`  
 **Baseline validator commit:** `2bd5665`  
 **Baseline score commit:** `d0f6b8e`  
-**Current status:** `STAGE_3_PATCH_CYCLE_1_REQUIRED`
+**Current status:** `STAGE_3_PATCH_CYCLE_1_RETEST_PASSED`
 
 ## Baseline result
 
@@ -48,3 +48,18 @@ Patch cycle 1 passes only if:
 - the ten-defect and classification scores remain 10 of 10;
 - all prior regression tests pass; and
 - the final status remains `READY_FOR_USER_REVIEW`.
+
+## Patch cycle 1 result
+
+- Primary capacity source corrected from `S1 + S3` to `S1` only.
+- Explicit quantity parsing now records two 25-minute periods plus one 40-minute period as three client observations.
+- Later references to “the 40-minute period” no longer create duplicate observations.
+- The OT simulation remains separately visible in the accessibility lane, bridge, finding, and revised output.
+- Capacity-source validator added and passed.
+- Stage 3 positive and negative regression tests added and passed.
+- Final Stage 3 packet: 24 of 24 deterministic checks passed.
+- Frozen defect and classification scores remained 10 of 10.
+- Critical false positives remained 0.
+- Full repository unit tests: 5 of 5 passed.
+
+No additional patch cycle is required.

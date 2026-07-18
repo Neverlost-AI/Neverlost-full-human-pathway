@@ -49,6 +49,7 @@ def score(packet_dir: Path, case_spec_path: Path) -> dict[str, Any]:
     capacity = load_json(packet_dir / "03-capacity-record.json")
     pathway = load_json(packet_dir / "04-pathway-plan.json")
     checkpoint = load_json(packet_dir / "08-checkpoint.json")
+    run_manifest = load_json(packet_dir / "09-run-manifest.json")
     validation = load_json(packet_dir / "validation-report.json")
     revised = (packet_dir / "06-revised-output.md").read_text(encoding="utf-8")
     finding_map = {item["defect_id"]: item for item in findings_doc["findings"]}
@@ -124,6 +125,8 @@ def score(packet_dir: Path, case_spec_path: Path) -> dict[str, Any]:
     )
     return {
         "case_id": case_spec["case_id"],
+        "scored_packet": str(packet_dir),
+        "patch_cycle_count": run_manifest["patch_cycle_count"],
         "baseline_packet_commit": "13af4f9",
         "baseline_validator_commit": "2bd5665",
         "status": "PASS" if passed else "FAIL",
