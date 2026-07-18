@@ -69,6 +69,8 @@ def validate(packet_dir: Path, case_spec_path: Path, patch_cycle_count: int = 0)
     add("source_authority_visible", all(item["authority"] for item in sources), f"authorities={sorted({item['authority'] for item in sources})}")
 
     capacity = loaded["03-capacity-record.json"]
+    user_source_ids = {item["id"] for item in sources if item["type"] == "synthetic_user_report"}
+    add("capacity_source_scope", set(capacity["source_ids"]) == user_source_ids, f"capacity_sources={capacity['source_ids']} expected_user_sources={sorted(user_source_ids)}")
     add("recovery_cost_visible", bool(capacity["recovery_cost"]["delayed"]), capacity["recovery_cost"]["delayed"])
     add("repeatability_bounded", capacity["repeatability"] in {"VARIABLE", "NOT_YET_KNOWN"}, capacity["repeatability"])
 

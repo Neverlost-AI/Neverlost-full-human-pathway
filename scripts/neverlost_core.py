@@ -32,6 +32,19 @@ SOURCE_LABELS = {
     "synthetic_draft_output": "Candidate draft",
 }
 
+NUMBER_WORDS = {
+    "one": 1,
+    "two": 2,
+    "three": 3,
+    "four": 4,
+    "five": 5,
+    "six": 6,
+    "seven": 7,
+    "eight": 8,
+    "nine": 9,
+    "ten": 10,
+}
+
 
 def load_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
@@ -148,28 +161,47 @@ def _mentioned_accommodations(text: str) -> list[str]:
     return [label for phrase, label in candidates if phrase in lowered]
 
 
+def _duration_observations(text: str) -> tuple[int, list[int]]:
+    """Return explicit observation count and durations without counting later references."""
+    counted: list[tuple[int, int]] = []
+    count_pattern = r"\b(one|two|three|four|five|six|seven|eight|nine|ten|\d+)\s+(\d+)-minute\b"
+    for match in re.finditer(count_pattern, text, flags=re.IGNORECASE):
+        raw_count, raw_duration = match.groups()
+        count = int(raw_count) if raw_count.isdigit() else NUMBER_WORDS[raw_count.lower()]
+        counted.append((count, int(raw_duration)))
+    if not counted:
+        article_match = re.search(r"\b(?:a|an)\s+(\d+)-minute\b", text, flags=re.IGNORECASE)
+        if article_match:
+            counted.append((1, int(article_match.group(1))))
+    if not counted:
+        first_duration = re.search(r"\b(\d+)-minute\b", text, flags=re.IGNORECASE)
+        if first_duration:
+            counted.append((1, int(first_duration.group(1))))
+    return sum(count for count, _ in counted), [duration for _, duration in counted]
+
+
 def build_capacity_record(case_id: str, sources: list[dict[str, Any]]) -> dict[str, Any]:
     user = first_source(sources, "synthetic_user_report")
     if user is None:
         raise ValueError("A synthetic_user_report is required to build capacity context")
-    ot = first_source(sources, "synthetic_occupational_therapy_note")
-    combined = " ".join(source["content"] for source in [user, ot] if source)
-    durations = [int(value) for value in re.findall(r"\b(\d+)-minute\b", combined, flags=re.IGNORECASE)]
+    observation_count, durations = _duration_observations(user["content"])
     longest = max(durations) if durations else 1
-    separate_observations = len(durations) > 1 or "separate day" in user["content"].lower()
+    separate_observations = observation_count > 1 or "separate day" in user["content"].lower()
 
     if separate_observations:
-        output = f"Reported {len(durations)} separate computer-task observations; the longest recorded period was {longest} minutes."
+        output = f"Reported {observation_count} separate client-observed computer-task periods; the longest recorded period was {longest} minutes."
     else:
         output = f"Reported one bounded computer or document-task observation lasting {longest} minutes."
 
     conditions = ["Synthetic self-reported observation"]
     if separate_observations:
         conditions.append("Activities occurred on separate days")
-    if "consecutive-day" in combined.lower():
+    if "consecutive-day" in user["content"].lower():
         conditions.append("Consecutive-day performance was not tested")
 
-    accommodations = _mentioned_accommodations(combined) or ["Pacing and breaks"]
+    accommodations = _mentioned_accommodations(user["content"])
+    if not accommodations:
+        accommodations = ["Separate-day pacing between reported periods" if separate_observations else "Pacing and breaks"]
     constraints = ["The observation does not establish a sustainable work schedule"]
     if "recovery" in user["content"].lower():
         constraints.append("Recovery time varied after the reported activity")
@@ -190,13 +222,10 @@ def build_capacity_record(case_id: str, sources: list[dict[str, Any]]) -> dict[s
     else:
         delayed = "Delayed and consecutive-day recovery remain unverified."
 
-    record_source_ids = [user["id"]]
-    if ot:
-        record_source_ids.append(ot["id"])
     return {
         "case_id": case_id,
         "observation_id": "CAP-001",
-        "source_ids": record_source_ids,
+        "source_ids": [user["id"]],
         "observation_window": {"date": user["date"], "duration_minutes": longest},
         "output_achieved": output,
         "conditions": conditions,
