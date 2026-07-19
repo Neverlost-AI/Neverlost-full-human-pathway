@@ -46,14 +46,14 @@ This checklist audits submission readiness. It does not determine legal eligibil
 | ID | Official requirement | Neverlost evidence / action | Status |
 | --- | --- | --- | --- |
 | C-12 | Choose the best-aligned category. | Work & Productivity is frozen in the Stage 1 scope decision; it still must be selected on Devpost. | `PARTIAL_PACKAGING_REQUIRED` |
-| C-13 | Include an English text description explaining features and functionality. | Stage 4 evidence supports the description. Devpost-ready copy has not yet been drafted. | `OPEN_ACTION` |
-| C-14 | Include a public YouTube demonstration video under three minutes, with audio explaining what was built and how Codex and GPT-5.6 were used. | Storyboard exists at `demo/05_DEMO_SCRIPT_AND_VIDEO_STORYBOARD.md`. Recording, captions, upload, model-usage explanation, and signed-out playback test remain. | `OPEN_ACTION` |
-| C-15 | Video uses no third-party trademarks, copyrighted music, or other material without permission. | Use repository-owned visuals, the approved NVLT mark, original narration, and no unlicensed music. Perform a final rights audit. | `OPEN_ACTION` |
-| C-16 | Provide a judge-accessible repository URL: public with relevant licensing, or private and shared with both required addresses. | Entrant selected a private repository. Repository creation and sharing with `testing@devpost.com` and `build-week-event@openai.com` remain open. | `OPEN_ACTION` |
+| C-13 | Include an English text description explaining features and functionality. | Devpost-ready English copy is drafted at `submission/DEVPOST_SUBMISSION_COPY_v1_0.md`; it still must be pasted and saved in the authenticated entry. | `PARTIAL_PACKAGING_REQUIRED` |
+| C-14 | Include a public YouTube demonstration video under three minutes, with audio explaining what was built and how Codex and GPT-5.6 were used. | A timed 2:40 script, shot list, and SRT captions are complete in `submission/video/`. Recording, public YouTube upload, and signed-out playback testing remain. | `PARTIAL_PACKAGING_REQUIRED` |
+| C-15 | Video uses no third-party trademarks, copyrighted music, or other material without permission. | The visual package uses repository-owned content, the approved NVLT mark, original copy, and no external music or imagery. Repeat the audit against the final recording. | `PARTIAL_PACKAGING_REQUIRED` |
+| C-16 | Provide a judge-accessible repository URL: public with relevant licensing, or private and shared with both required addresses. | The private repository exists. Invitations were sent to both required judge addresses and remain pending acceptance; entrant retained screenshot evidence. | `PARTIAL_PACKAGING_REQUIRED` |
 | C-17 | README explains Codex collaboration, acceleration, key human decisions, and Codex/GPT-5.6 contributions. | README now documents Codex acceleration, GPT-5.6 Sol use, the creator's controlling decisions, Build Week additions, accessibility value, and the private Session ID boundary. | `VERIFIED_COMPLETE` |
 | C-18 | Provide the `/feedback` Codex Session ID for the thread where most core functionality was built. | Feedback was submitted and the current thread ID was captured. The value is retained privately for the Devpost field and intentionally excluded from the repository. | `VERIFIED_COMPLETE` |
 | C-19 | Plugins/dev tools include install instructions, supported platforms, and a judge test path that avoids rebuilding from scratch. | README and `docs/PLUGIN_INSTALLATION.md` provide platform-specific commands, optional local-plugin installation, synthetic sample data, and a no-build judge path. The Linux clean-clone test passed. | `VERIFIED_COMPLETE` |
-| C-20 | Provide free, unrestricted working access for testing through the judging period. | Repository/demo access must remain available through August 5, 2026 at 5:00 p.m. Pacific Time; access mode has not yet been selected. | `OPEN_ACTION` |
+| C-20 | Provide free, unrestricted working access for testing through the judging period. | Private-repository access was selected and both judge invitations are pending. Access must remain available through August 5, 2026 at 5:00 p.m. Pacific Time. | `PARTIAL_PACKAGING_REQUIRED` |
 | C-21 | Submission materials are in English or include English translations. | Repository, demonstration package, and planned submission materials are in English. | `VERIFIED_COMPLETE` |
 
 ## D. Neverlost-specific safety and submission integrity
@@ -67,12 +67,12 @@ This checklist audits submission readiness. It does not determine legal eligibil
 ## Current readiness summary
 
 - `VERIFIED_COMPLETE`: 12
-- `PARTIAL_PACKAGING_REQUIRED`: 5
-- `OPEN_ACTION`: 7
+- `PARTIAL_PACKAGING_REQUIRED`: 10
+- `OPEN_ACTION`: 2
 - `USER_CONFIRMATION_REQUIRED`: 0
 - `NOT_APPLICABLE`: 0
 
-No rule conflict was found that makes Neverlost ineligible on the current evidence. All entrant confirmations are complete. Submission is not yet compliance-ready because private repository creation and judge sharing, README packaging, the video, final rights/privacy review, and Devpost assembly remain open.
+No rule conflict was found that makes Neverlost ineligible on the current evidence. All entrant confirmations are complete. The repository, judge invitations, README packaging, visual gallery, hosted judge experience, Devpost copy, narration, shot list, and captions now exist. Submission is not yet compliance-ready because the public video, final-media review, authenticated Devpost assembly, judge-invitation acceptance, and submission receipt remain open.
 
 ## Entrant confirmations captured
 

@@ -8,6 +8,12 @@
 
 Neverlost is an OpenAI Build Week project that combines three reusable Codex skills with structured synthetic data, deterministic validation, governed checkpoints, and a reproducible judge demonstration. It is designed for work where a polished summary is not enough: source authority, uncertainty, human capacity, accommodations, recovery cost, and cross-system responsibility must remain visible.
 
+## Visual judge experience
+
+Open the six-frame interactive tour: **[Neverlost Judge Experience](https://neverlost-judge-experience.ivory-moon-9960.chatgpt.site)**.
+
+The same evidence is packaged as six 16:9 submission images in [`submission/visual-gallery/`](submission/visual-gallery/) and as an editable presentation at [`submission/NEVERLOST_BUILD_WEEK_JUDGE_GALLERY_v1_0.pptx`](submission/NEVERLOST_BUILD_WEEK_JUDGE_GALLERY_v1_0.pptx). All displayed case material is synthetic. Creator context is identified separately and is not treated as test evidence.
+
 ## Judge quickstart
 
 No API key, internet connection, package installation, or real record is required.
