@@ -191,6 +191,14 @@ py -3 -m unittest discover -s tests -v
 | `governance/` | Scope decisions, change logs, defect records, and checkpoints |
 | `submission/` | Compliance, Build Week delta, and submission planning |
 
+## Optional companion videos
+
+These videos extend the demonstrated workflow but are not required for judging the core submission.
+
+- [The Full Human Pathway](https://youtu.be/7zIodESXarQ) — See how Neverlost can connect healthcare, accessibility, daily life, benefits, education, and vocational systems.
+
+- [The Patient’s Paradox](https://youtu.be/eST8JpADyYY) — Explore the lived-experience and philosophical foundation behind Neverlost.
+
 ## Boundaries and limitations
 
 Neverlost is a bounded, rule-based prototype operating on fictional records. It demonstrates governance patterns and deterministic behavior on the included cases. It does not:
