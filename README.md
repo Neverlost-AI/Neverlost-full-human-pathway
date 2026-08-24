@@ -1,22 +1,34 @@
 # Neverlost: The Full Human Pathway
 
-**A governed, capacity-aware Codex workflow for turning scattered human reality into evidence-aligned action.**
+**A governed, capacity-aware workflow for turning scattered human reality into evidence-aligned action without erasing uncertainty, source authority, or human review.**
 
-[![Track: Work & Productivity](https://img.shields.io/badge/Track-Work%20%26%20Productivity-1769AA)](#build-week-submission)
+[![OpenAI Build Week](https://img.shields.io/badge/OpenAI%20Build%20Week-Work%20%26%20Productivity-1769AA)](#build-week-history)
 [![Data: Synthetic only](https://img.shields.io/badge/Data-Synthetic%20only-1B7F4B)](#boundaries-and-limitations)
-[![Tests: 6 passing](https://img.shields.io/badge/Tests-6%20passing-1B7F4B)](#validated-result)
+[![Tests: 6 passing](https://img.shields.io/badge/Tests-6%20passing-1B7F4B)](#validated-prototype)
 
-Neverlost is an OpenAI Build Week project that combines three reusable Codex skills with structured synthetic data, deterministic validation, governed checkpoints, and a reproducible judge demonstration. It is designed for work where a polished summary is not enough: source authority, uncertainty, human capacity, accommodations, recovery cost, and cross-system responsibility must remain visible.
+Neverlost: The Full Human Pathway is a prototype created for OpenAI Build Week. It combines three reusable workflow skills with structured synthetic data, deterministic validation, governed checkpoints, negative testing, and a reproducible demonstration.
 
-## Visual judge experience
+The core design question is simple: **how can AI help organize complex human situations without silently turning observations into conclusions, possibilities into approvals, or visible output into proof of sustainable capacity?**
 
-Open the six-frame interactive tour: **[Neverlost Judge Experience](https://neverlost-judge-experience.ivory-moon-9960.chatgpt.site)**.
+## Portfolio status
 
-The same evidence is packaged as six 16:9 submission images in [`submission/visual-gallery/`](submission/visual-gallery/) and as an editable presentation at [`submission/NEVERLOST_BUILD_WEEK_JUDGE_GALLERY_v1_0.pptx`](submission/NEVERLOST_BUILD_WEEK_JUDGE_GALLERY_v1_0.pptx). All displayed case material is synthetic. Creator context is identified separately and is not treated as test evidence.
+Build Week judging is complete. This repository now serves as a **portfolio and continued-development project**.
 
-## Judge quickstart
+The exact submission-era state is preserved on the branch [`build-week-2026-submission-final`](https://github.com/Neverlost-AI/Neverlost-build-week/tree/build-week-2026-submission-final). Changes made to `main` after that snapshot are post-competition maintenance, security hardening, documentation, or future development and should not be interpreted as part of the original judged submission.
 
-No API key, internet connection, package installation, or real record is required.
+See [`POST_COMPETITION_STATUS.md`](POST_COMPETITION_STATUS.md) for the current repository boundary.
+
+## Demo
+
+- **Build Week demonstration:** [YouTube](https://youtu.be/5DefEcMeJ6w)
+- **Full Human Pathway walkthrough:** [YouTube](https://youtu.be/7zIodESXarQ)
+- **Historical six-frame project tour:** [Neverlost Build Week experience](https://neverlost-judge-experience.ivory-moon-9960.chatgpt.site)
+
+All included case data used for technical validation is synthetic.
+
+## Quickstart
+
+No API key, package installation, external service, or real record is required.
 
 ### macOS or Linux
 
@@ -47,33 +59,35 @@ Regression tests: 6/6
 Final artifact status: READY_FOR_USER_REVIEW
 ```
 
-Start with [`demo/README.md`](demo/README.md) for the judge-facing tour. Full reproduction and validation commands are in [`demo/07_REPRODUCIBILITY_GUIDE.md`](demo/07_REPRODUCIBILITY_GUIDE.md).
+For the full reproduction path, see [`demo/07_REPRODUCIBILITY_GUIDE.md`](demo/07_REPRODUCIBILITY_GUIDE.md).
 
 ## The problem
 
-AI can turn scattered records into a confident-looking answer while silently converting:
+AI can produce a polished answer while quietly changing what the underlying evidence actually supports. In complex human systems, those changes can matter.
+
+Examples include converting:
 
 - a person's goal into proof of present capacity;
 - an observation into a professional conclusion;
 - general information into a personal guarantee;
 - a possible service into an approval; or
-- visible output into sustainable work without recording the conditions and recovery cost behind it.
+- completed work into proof that the same work is sustainable without recording the conditions, supports, interruption cost, or recovery cost behind it.
 
-Neverlost makes those transformations reviewable before the output reaches a human decision-maker.
+Neverlost makes those transformations visible and reviewable before the output reaches a human decision-maker.
 
 ## What the project does
 
-The plugin combines three reusable skills:
+The prototype combines three reusable skills:
 
 1. **Neverlost governed review** — preserves source custody, separates evidence from guidance, checks role boundaries, controls revisions, and records approval gates.
 2. **Full Human Pathway** — maps coordinated next steps across medical, daily-living, vocational, benefits, financial, and other relevant lanes without assigning authority the workflow does not have.
 3. **Capacity & Output** — records useful output together with the conditions, supports, variability, interruption cost, and recovery cost required to produce it.
 
-The Build Week implementation adds machine-readable schemas, two deliberately flawed synthetic cases, a generalized workflow runner, validators, a frozen defect scorer, negative tests, governed patch history, and an eleven-file demonstration package.
+The implementation adds machine-readable schemas, deliberately flawed synthetic cases, a generalized workflow runner, validators, a frozen defect scorer, negative tests, governed patch history, and a reproducible demonstration package.
 
-## Validated result
+## Validated prototype
 
-The first synthetic case established the pipeline. A distinct second case introduced seven records across different authority types and ten unsafe transformations. Its answer key and retest protocol were frozen before the generalized runner was executed.
+The first synthetic case established the pipeline. A distinct second case introduced seven records across different authority types and ten deliberately unsafe transformations. Its answer key and retest protocol were frozen before the generalized runner was executed.
 
 | Measure | Result |
 | --- | ---: |
@@ -84,77 +98,69 @@ The first synthetic case established the pipeline. A distinct second case introd
 | Qualitative gates | 12 / 12 |
 | Unit tests | 6 / 6 |
 | Governed human-review patch cycles | 1 |
-| Real identifiers | 0 |
+| Real identifiers in validated case package | 0 |
 | Prohibited conclusions retained | 0 |
 
-Human inspection found a separate measurement-fidelity issue after the baseline passed: client activity and an occupational-therapy simulation had been combined in one capacity observation. The workflow preserved the passing baseline, logged the finding, patched reusable logic, and reran the suite. The correction is part of the evidence, not hidden from it.
+Human inspection also found a separate measurement-fidelity issue after the baseline passed: client activity and an occupational-therapy simulation had been combined in one capacity observation. The workflow preserved the passing baseline, logged the finding, patched reusable logic, and reran the suite. The correction remains visible as part of the evidence rather than being hidden by the final result.
 
-## Build Week submission
+## Design principles demonstrated
 
-- **Track:** Work & Productivity
-- **Project type:** Codex plugin, reusable skills, governed workflow, and deterministic demonstration tool
-- **Model confirmed for the core project thread:** GPT-5.6 Sol
-- **Repository access:** private judge repository
-- **Data:** synthetic only
-- **Submission boundary:** contest packaging is separate from the frozen Stage 1–4 evidence
+- **Preserve before you understand.** Source meaning and custody should survive synthesis.
+- **Human authority remains explicit.** AI can organize, classify, flag, and propose; it does not inherit professional or institutional authority.
+- **Uncertainty stays visible.** Unknown, proposed, observed, and approved are not interchangeable states.
+- **Capacity is contextual.** Output should be interpreted together with the conditions and recovery cost required to produce it.
+- **Corrections are evidence.** A governed patch history is more useful than pretending the first implementation was perfect.
+- **Synthetic data first.** The repository demonstrates mechanics without requiring real client records.
 
-### What existed before the Build Week submission period
+## Build Week history
+
+The project was originally submitted to **OpenAI Build Week** in the **Work & Productivity** track as a Codex plugin / reusable-skill workflow with deterministic validation.
+
+### What predated the submission period
 
 - the Neverlost governed-review method and review model;
 - the Capacity & Output concept; and
-- the Neverlost identity and blue/white visual direction.
+- the Neverlost identity and visual direction.
 
-### What was created during Build Week before Stage 1
-
-- the Full Human Pathway concept and its initial review-only framework.
-
-### What was meaningfully added during Build Week
+### What was created or meaningfully extended during Build Week
 
 - the Full Human Pathway concept and initial framework;
 - the installable plugin structure and three packaged skills;
 - seven data contracts and two synthetic case systems;
 - generalized workflow, validation, scoring, negative tests, and regressions;
 - frozen baseline and governed correction history;
-- one-command demonstration and judge evidence package; and
+- one-command demonstration and evidence package; and
 - submission compliance, development-delta, and reproducibility records.
 
-The detailed origin and commit evidence is recorded in [`submission/BUILD_WEEK_DELTA_AND_CODEX_COLLABORATION_RECORD.md`](submission/BUILD_WEEK_DELTA_AND_CODEX_COLLABORATION_RECORD.md).
+The detailed origin record is preserved in [`submission/BUILD_WEEK_DELTA_AND_CODEX_COLLABORATION_RECORD.md`](submission/BUILD_WEEK_DELTA_AND_CODEX_COLLABORATION_RECORD.md). Other files under `submission/` are retained as historical contest artifacts and may still contain judge-facing language that is no longer current operational guidance.
 
 ## How Codex and GPT-5.6 Sol were used
 
-Codex with GPT-5.6 Sol helped inspect and organize the source framework, scaffold the plugin and schemas, implement the synthetic workflow, write validators and tests, run and diagnose the distinct-case retest, apply a bounded reusable correction, and produce the technical and judge-facing evidence package.
+During the Build Week implementation, Codex with GPT-5.6 Sol helped inspect and organize the source framework, scaffold the plugin and schemas, implement the synthetic workflow, write validators and tests, diagnose the distinct-case retest, apply a bounded reusable correction, and produce technical documentation and demonstration evidence.
 
-Codex also accelerated repetitive work that normally creates significant physical strain: repository inspection, structured drafting, consistency checks, test execution, formatting, and documentation. The result was not simply faster output; it reduced the amount of manual repetition required to preserve a rigorous evidence trail.
-
-### Decisions retained by the creator
-
-Jeff Summerhays / Neverlost controlled the central product and governance decisions, including:
+The creator retained the central product and governance decisions, including:
 
 - the Full Human Pathway as the organizing framework;
 - recovery cost and variability as necessary parts of capacity evidence;
 - separation of user report, record evidence, Neverlost synthesis, and third-party authority;
 - preservation of the first distinct-case run before scoring or correction;
-- use of deliberate defects to make safety behavior measurable;
-- the human-review patch as visible governance evidence;
-- vocational relevance without counselor, agency, provider, employer, or funding endorsement; and
-- separation of Neverlost from the Modern Paradox Studio project.
+- deliberate defects as a measurable safety test;
+- visible human-review patch history; and
+- explicit limits on vocational, medical, agency, employer, or funding authority.
 
-The core Codex Session ID is retained privately for the required Devpost field and is intentionally not published here.
+The private Codex session identifier used for the historical submission was intentionally kept outside the repository.
 
 ## Installation and supported platforms
 
-### Judge test path — recommended
+The demonstration uses the Python standard library and has no build step.
 
-The demonstration is a Python standard-library project. Clone the repository and run the quickstart command above; there is no build step and no dependency installation.
+- **Required:** Python 3.10+ and Git
+- **API key:** not required
+- **Network after clone:** not required for the deterministic demonstration
+- **Recorded clean-test environment:** Linux x86_64 with Python 3.12.13
+- **Command-line targets:** Windows, macOS, and Linux with Python 3.10+
 
-- **Required:** Python 3.10 or newer and Git
-- **No API key:** required
-- **No network after clone:** required
-- **Current clean-test environment:** Linux x86_64 with Python 3.12.13
-- **Supported command-line targets:** Windows, macOS, and Linux with Python 3.10+
-- **Plugin surfaces:** local plugin installation is intended for the ChatGPT desktop app in Work mode or Codex, and for Codex CLI
-
-Windows and macOS use only Python standard-library code, but the final Build Week clean-checkout verification recorded in this repository was performed on Linux. See [`docs/PLUGIN_INSTALLATION.md`](docs/PLUGIN_INSTALLATION.md) for optional local-plugin installation.
+See [`docs/PLUGIN_INSTALLATION.md`](docs/PLUGIN_INSTALLATION.md) for the original optional plugin-installation path.
 
 ## Full validation
 
@@ -180,35 +186,38 @@ py -3 -m unittest discover -s tests -v
 
 | Location | Purpose |
 | --- | --- |
-| `.codex-plugin/plugin.json` | Codex plugin manifest |
+| `.codex-plugin/plugin.json` | Original Codex plugin manifest |
 | `skills/` | Governed review, Full Human Pathway, and Capacity & Output skills |
 | `schemas/` | Machine-readable data contracts |
 | `fixtures/` | Synthetic cases and frozen defect specifications |
 | `scripts/` | Workflow, validation, scoring, and demo runners |
 | `tests/` | Positive, negative, regression, and clean-demo tests |
-| `examples/` | Generated packets and preserved Stage 3 baseline evidence |
-| `demo/` | Judge results, before/after evidence, architecture, storyboard, and reproducibility |
+| `examples/` | Generated packets and preserved baseline evidence |
+| `demo/` | Results, before/after evidence, architecture, storyboard, and reproducibility |
 | `governance/` | Scope decisions, change logs, defect records, and checkpoints |
-| `submission/` | Compliance, Build Week delta, and submission planning |
+| `submission/` | Historical Build Week compliance and submission records |
 
-## Optional companion videos
+## Related work
 
-These videos extend the demonstrated workflow but are not required for judging the core submission.
-
-- [The Full Human Pathway](https://youtu.be/7zIodESXarQ) — See how Neverlost can connect healthcare, accessibility, daily life, benefits, education, and vocational systems.
-
-- [The Patient’s Paradox](https://youtu.be/eST8JpADyYY) — Explore the lived-experience and philosophical foundation behind Neverlost.
+- [The Full Human Pathway](https://youtu.be/7zIodESXarQ) — a visual explanation of the whole-person coordination framework.
+- [The Patient's Paradox](https://youtu.be/eST8JpADyYY) — lived-experience and philosophical context that influenced the broader Neverlost direction.
 
 ## Boundaries and limitations
 
-Neverlost is a bounded, rule-based prototype operating on fictional records. It demonstrates governance patterns and deterministic behavior on the included cases. It does not:
+Neverlost is a bounded prototype operating on fictional records. It demonstrates governance patterns and deterministic behavior on the included cases. It does not:
 
 - diagnose or provide medical, legal, benefits, or vocational advice;
 - determine work capacity, eligibility, services, equipment, funding, or employment;
-- contain real client records or private appointment information;
+- contain real client records or private appointment information in the validated demonstration package;
 - establish counselor, provider, agency, employer, OpenAI, or Devpost endorsement;
 - prove accuracy on unseen real records;
 - authorize operational or real-client use; or
-- replace human review or the authority of the responsible professional or agency.
+- replace human review or the authority of the responsible professional or institution.
 
-The final human-facing status remains `READY_FOR_USER_REVIEW`.
+The final human-facing workflow status remains `READY_FOR_USER_REVIEW`.
+
+## Historical submission snapshot
+
+For the exact repository state preserved after judging, use:
+
+[`build-week-2026-submission-final`](https://github.com/Neverlost-AI/Neverlost-build-week/tree/build-week-2026-submission-final)
